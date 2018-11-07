@@ -1,0 +1,2954 @@
+// ***** BenchmarkRunner: Start   *****
+// Found benchmarks:
+//   CopyFromStreamToStream.ArraySegment: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=100]
+//   CopyFromStreamToStream.CopyToStream: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=100]
+//   CopyFromStreamToStream.CopyToStreamFromManager: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=100]
+//   CopyFromStreamToStream.CopyToStreamFromManagerInsideUsing: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=100]
+//   CopyFromStreamToStream.ArraySegment: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=512]
+//   CopyFromStreamToStream.CopyToStream: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=512]
+//   CopyFromStreamToStream.CopyToStreamFromManager: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=512]
+//   CopyFromStreamToStream.CopyToStreamFromManagerInsideUsing: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=512]
+//   CopyFromStreamToStream.ArraySegment: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=2048]
+//   CopyFromStreamToStream.CopyToStream: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=2048]
+//   CopyFromStreamToStream.CopyToStreamFromManager: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=2048]
+//   CopyFromStreamToStream.CopyToStreamFromManagerInsideUsing: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=2048]
+//   CopyFromStreamToStream.ArraySegment: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=4096]
+//   CopyFromStreamToStream.CopyToStream: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=4096]
+//   CopyFromStreamToStream.CopyToStreamFromManager: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=4096]
+//   CopyFromStreamToStream.CopyToStreamFromManagerInsideUsing: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=4096]
+
+// Validating benchmarks:
+No exporters defined, results will not be persisted.
+// ***** Building 16 benchmark(s) in Parallel: Start   *****
+// ***** Done, took 00:00:16 (16.36 sec)   *****
+// **************************
+// Benchmark: CopyFromStreamToStream.ArraySegment: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=100]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-WCUUEN(InvocationCount=500, UnrollFactor=1)
+
+IdleWarmup  1: 500 op, 190300.00 ns, 380.6000 ns/op
+IdleWarmup  2: 500 op, 2800.00 ns, 5.6000 ns/op
+IdleWarmup  3: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleWarmup  4: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleWarmup  5: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleWarmup  6: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleWarmup  7: 500 op, 2000.00 ns, 4.0000 ns/op
+
+IdleTarget  1: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  2: 500 op, 1600.00 ns, 3.2000 ns/op
+IdleTarget  3: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  4: 500 op, 1800.00 ns, 3.6000 ns/op
+IdleTarget  5: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  6: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  7: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  8: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  9: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 10: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget 11: 500 op, 8100.00 ns, 16.2000 ns/op
+IdleTarget 12: 500 op, 2100.00 ns, 4.2000 ns/op
+IdleTarget 13: 500 op, 2000.00 ns, 4.0000 ns/op
+IdleTarget 14: 500 op, 1800.00 ns, 3.6000 ns/op
+IdleTarget 15: 500 op, 2000.00 ns, 4.0000 ns/op
+IdleTarget 16: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget 17: 500 op, 1600.00 ns, 3.2000 ns/op
+IdleTarget 18: 500 op, 1800.00 ns, 3.6000 ns/op
+IdleTarget 19: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget 20: 500 op, 1500.00 ns, 3.0000 ns/op
+
+MainWarmup  1: 500 op, 277800.00 ns, 555.6000 ns/op
+MainWarmup  2: 500 op, 515900.00 ns, 1.0318 us/op
+MainWarmup  3: 500 op, 259100.00 ns, 518.2000 ns/op
+MainWarmup  4: 500 op, 321800.00 ns, 643.6000 ns/op
+MainWarmup  5: 500 op, 271400.00 ns, 542.8000 ns/op
+MainWarmup  6: 500 op, 310700.00 ns, 621.4000 ns/op
+
+// BeforeMainRun
+MainTarget  1: 500 op, 255500.00 ns, 511.0000 ns/op
+MainTarget  2: 500 op, 251800.00 ns, 503.6000 ns/op
+MainTarget  3: 500 op, 251700.00 ns, 503.4000 ns/op
+MainTarget  4: 500 op, 251400.00 ns, 502.8000 ns/op
+MainTarget  5: 500 op, 267300.00 ns, 534.6000 ns/op
+MainTarget  6: 500 op, 259200.00 ns, 518.4000 ns/op
+MainTarget  7: 500 op, 281000.00 ns, 562.0000 ns/op
+MainTarget  8: 500 op, 301100.00 ns, 602.2000 ns/op
+MainTarget  9: 500 op, 252100.00 ns, 504.2000 ns/op
+MainTarget 10: 500 op, 251700.00 ns, 503.4000 ns/op
+MainTarget 11: 500 op, 493900.00 ns, 987.8000 ns/op
+MainTarget 12: 500 op, 300700.00 ns, 601.4000 ns/op
+MainTarget 13: 500 op, 531900.00 ns, 1.0638 us/op
+MainTarget 14: 500 op, 252700.00 ns, 505.4000 ns/op
+MainTarget 15: 500 op, 254900.00 ns, 509.8000 ns/op
+MainTarget 16: 500 op, 253600.00 ns, 507.2000 ns/op
+MainTarget 17: 500 op, 261900.00 ns, 523.8000 ns/op
+MainTarget 18: 500 op, 254200.00 ns, 508.4000 ns/op
+MainTarget 19: 500 op, 253900.00 ns, 507.8000 ns/op
+MainTarget 20: 500 op, 255100.00 ns, 510.2000 ns/op
+MainTarget 21: 500 op, 252000.00 ns, 504.0000 ns/op
+MainTarget 22: 500 op, 254600.00 ns, 509.2000 ns/op
+MainTarget 23: 500 op, 251400.00 ns, 502.8000 ns/op
+MainTarget 24: 500 op, 274100.00 ns, 548.2000 ns/op
+MainTarget 25: 500 op, 525300.00 ns, 1.0506 us/op
+MainTarget 26: 500 op, 337700.00 ns, 675.4000 ns/op
+MainTarget 27: 500 op, 454400.00 ns, 908.8000 ns/op
+MainTarget 28: 500 op, 329700.00 ns, 659.4000 ns/op
+MainTarget 29: 500 op, 326400.00 ns, 652.8000 ns/op
+MainTarget 30: 500 op, 473600.00 ns, 947.2000 ns/op
+MainTarget 31: 500 op, 373500.00 ns, 747.0000 ns/op
+MainTarget 32: 500 op, 280900.00 ns, 561.8000 ns/op
+MainTarget 33: 500 op, 402800.00 ns, 805.6000 ns/op
+MainTarget 34: 500 op, 259700.00 ns, 519.4000 ns/op
+MainTarget 35: 500 op, 260800.00 ns, 521.6000 ns/op
+MainTarget 36: 500 op, 259700.00 ns, 519.4000 ns/op
+MainTarget 37: 500 op, 256600.00 ns, 513.2000 ns/op
+MainTarget 38: 500 op, 286700.00 ns, 573.4000 ns/op
+MainTarget 39: 500 op, 454000.00 ns, 908.0000 ns/op
+MainTarget 40: 500 op, 447200.00 ns, 894.4000 ns/op
+MainTarget 41: 500 op, 1019400.00 ns, 2.0388 us/op
+MainTarget 42: 500 op, 261500.00 ns, 523.0000 ns/op
+MainTarget 43: 500 op, 251700.00 ns, 503.4000 ns/op
+MainTarget 44: 500 op, 258100.00 ns, 516.2000 ns/op
+MainTarget 45: 500 op, 255700.00 ns, 511.4000 ns/op
+MainTarget 46: 500 op, 255400.00 ns, 510.8000 ns/op
+MainTarget 47: 500 op, 253700.00 ns, 507.4000 ns/op
+MainTarget 48: 500 op, 299700.00 ns, 599.4000 ns/op
+MainTarget 49: 500 op, 289000.00 ns, 578.0000 ns/op
+MainTarget 50: 500 op, 269600.00 ns, 539.2000 ns/op
+MainTarget 51: 500 op, 476800.00 ns, 953.6000 ns/op
+MainTarget 52: 500 op, 520400.00 ns, 1.0408 us/op
+MainTarget 53: 500 op, 258200.00 ns, 516.4000 ns/op
+MainTarget 54: 500 op, 461600.00 ns, 923.2000 ns/op
+MainTarget 55: 500 op, 471600.00 ns, 943.2000 ns/op
+MainTarget 56: 500 op, 453700.00 ns, 907.4000 ns/op
+MainTarget 57: 500 op, 279900.00 ns, 559.8000 ns/op
+MainTarget 58: 500 op, 426700.00 ns, 853.4000 ns/op
+MainTarget 59: 500 op, 444600.00 ns, 889.2000 ns/op
+MainTarget 60: 500 op, 254300.00 ns, 508.6000 ns/op
+MainTarget 61: 500 op, 323000.00 ns, 646.0000 ns/op
+MainTarget 62: 500 op, 253500.00 ns, 507.0000 ns/op
+MainTarget 63: 500 op, 254200.00 ns, 508.4000 ns/op
+MainTarget 64: 500 op, 254500.00 ns, 509.0000 ns/op
+MainTarget 65: 500 op, 481400.00 ns, 962.8000 ns/op
+MainTarget 66: 500 op, 448700.00 ns, 897.4000 ns/op
+MainTarget 67: 500 op, 503500.00 ns, 1.0070 us/op
+MainTarget 68: 500 op, 508300.00 ns, 1.0166 us/op
+MainTarget 69: 500 op, 254900.00 ns, 509.8000 ns/op
+MainTarget 70: 500 op, 253800.00 ns, 507.6000 ns/op
+MainTarget 71: 500 op, 398800.00 ns, 797.6000 ns/op
+MainTarget 72: 500 op, 312000.00 ns, 624.0000 ns/op
+MainTarget 73: 500 op, 268600.00 ns, 537.2000 ns/op
+MainTarget 74: 500 op, 274600.00 ns, 549.2000 ns/op
+MainTarget 75: 500 op, 299300.00 ns, 598.6000 ns/op
+MainTarget 76: 500 op, 262500.00 ns, 525.0000 ns/op
+MainTarget 77: 500 op, 317700.00 ns, 635.4000 ns/op
+MainTarget 78: 500 op, 304700.00 ns, 609.4000 ns/op
+MainTarget 79: 500 op, 254400.00 ns, 508.8000 ns/op
+MainTarget 80: 500 op, 284700.00 ns, 569.4000 ns/op
+MainTarget 81: 500 op, 654800.00 ns, 1.3096 us/op
+MainTarget 82: 500 op, 255600.00 ns, 511.2000 ns/op
+MainTarget 83: 500 op, 256400.00 ns, 512.8000 ns/op
+MainTarget 84: 500 op, 372700.00 ns, 745.4000 ns/op
+MainTarget 85: 500 op, 302500.00 ns, 605.0000 ns/op
+MainTarget 86: 500 op, 359600.00 ns, 719.2000 ns/op
+MainTarget 87: 500 op, 379600.00 ns, 759.2000 ns/op
+MainTarget 88: 500 op, 265400.00 ns, 530.8000 ns/op
+MainTarget 89: 500 op, 274800.00 ns, 549.6000 ns/op
+MainTarget 90: 500 op, 277100.00 ns, 554.2000 ns/op
+MainTarget 91: 500 op, 570400.00 ns, 1.1408 us/op
+MainTarget 92: 500 op, 457300.00 ns, 914.6000 ns/op
+MainTarget 93: 500 op, 1022900.00 ns, 2.0458 us/op
+MainTarget 94: 500 op, 354100.00 ns, 708.2000 ns/op
+MainTarget 95: 500 op, 418800.00 ns, 837.6000 ns/op
+MainTarget 96: 500 op, 259700.00 ns, 519.4000 ns/op
+MainTarget 97: 500 op, 971700.00 ns, 1.9434 us/op
+MainTarget 98: 500 op, 405300.00 ns, 810.6000 ns/op
+MainTarget 99: 500 op, 758200.00 ns, 1.5164 us/op
+MainTarget 100: 500 op, 256000.00 ns, 512.0000 ns/op
+
+// AfterMainRun
+Result  1: 500 op, 253550.00 ns, 507.1000 ns/op
+Result  2: 500 op, 249850.00 ns, 499.7000 ns/op
+Result  3: 500 op, 249750.00 ns, 499.5000 ns/op
+Result  4: 500 op, 249450.00 ns, 498.9000 ns/op
+Result  5: 500 op, 265350.00 ns, 530.7000 ns/op
+Result  6: 500 op, 257250.00 ns, 514.5000 ns/op
+Result  7: 500 op, 279050.00 ns, 558.1000 ns/op
+Result  8: 500 op, 299150.00 ns, 598.3000 ns/op
+Result  9: 500 op, 250150.00 ns, 500.3000 ns/op
+Result 10: 500 op, 249750.00 ns, 499.5000 ns/op
+Result 11: 500 op, 491950.00 ns, 983.9000 ns/op
+Result 12: 500 op, 298750.00 ns, 597.5000 ns/op
+Result 13: 500 op, 529950.00 ns, 1.0599 us/op
+Result 14: 500 op, 250750.00 ns, 501.5000 ns/op
+Result 15: 500 op, 252950.00 ns, 505.9000 ns/op
+Result 16: 500 op, 251650.00 ns, 503.3000 ns/op
+Result 17: 500 op, 259950.00 ns, 519.9000 ns/op
+Result 18: 500 op, 252250.00 ns, 504.5000 ns/op
+Result 19: 500 op, 251950.00 ns, 503.9000 ns/op
+Result 20: 500 op, 253150.00 ns, 506.3000 ns/op
+Result 21: 500 op, 250050.00 ns, 500.1000 ns/op
+Result 22: 500 op, 252650.00 ns, 505.3000 ns/op
+Result 23: 500 op, 249450.00 ns, 498.9000 ns/op
+Result 24: 500 op, 272150.00 ns, 544.3000 ns/op
+Result 25: 500 op, 523350.00 ns, 1.0467 us/op
+Result 26: 500 op, 335750.00 ns, 671.5000 ns/op
+Result 27: 500 op, 452450.00 ns, 904.9000 ns/op
+Result 28: 500 op, 327750.00 ns, 655.5000 ns/op
+Result 29: 500 op, 324450.00 ns, 648.9000 ns/op
+Result 30: 500 op, 471650.00 ns, 943.3000 ns/op
+Result 31: 500 op, 371550.00 ns, 743.1000 ns/op
+Result 32: 500 op, 278950.00 ns, 557.9000 ns/op
+Result 33: 500 op, 400850.00 ns, 801.7000 ns/op
+Result 34: 500 op, 257750.00 ns, 515.5000 ns/op
+Result 35: 500 op, 258850.00 ns, 517.7000 ns/op
+Result 36: 500 op, 257750.00 ns, 515.5000 ns/op
+Result 37: 500 op, 254650.00 ns, 509.3000 ns/op
+Result 38: 500 op, 284750.00 ns, 569.5000 ns/op
+Result 39: 500 op, 452050.00 ns, 904.1000 ns/op
+Result 40: 500 op, 445250.00 ns, 890.5000 ns/op
+Result 41: 500 op, 259550.00 ns, 519.1000 ns/op
+Result 42: 500 op, 249750.00 ns, 499.5000 ns/op
+Result 43: 500 op, 256150.00 ns, 512.3000 ns/op
+Result 44: 500 op, 253750.00 ns, 507.5000 ns/op
+Result 45: 500 op, 253450.00 ns, 506.9000 ns/op
+Result 46: 500 op, 251750.00 ns, 503.5000 ns/op
+Result 47: 500 op, 297750.00 ns, 595.5000 ns/op
+Result 48: 500 op, 287050.00 ns, 574.1000 ns/op
+Result 49: 500 op, 267650.00 ns, 535.3000 ns/op
+Result 50: 500 op, 474850.00 ns, 949.7000 ns/op
+Result 51: 500 op, 518450.00 ns, 1.0369 us/op
+Result 52: 500 op, 256250.00 ns, 512.5000 ns/op
+Result 53: 500 op, 459650.00 ns, 919.3000 ns/op
+Result 54: 500 op, 469650.00 ns, 939.3000 ns/op
+Result 55: 500 op, 451750.00 ns, 903.5000 ns/op
+Result 56: 500 op, 277950.00 ns, 555.9000 ns/op
+Result 57: 500 op, 424750.00 ns, 849.5000 ns/op
+Result 58: 500 op, 442650.00 ns, 885.3000 ns/op
+Result 59: 500 op, 252350.00 ns, 504.7000 ns/op
+Result 60: 500 op, 321050.00 ns, 642.1000 ns/op
+Result 61: 500 op, 251550.00 ns, 503.1000 ns/op
+Result 62: 500 op, 252250.00 ns, 504.5000 ns/op
+Result 63: 500 op, 252550.00 ns, 505.1000 ns/op
+Result 64: 500 op, 479450.00 ns, 958.9000 ns/op
+Result 65: 500 op, 446750.00 ns, 893.5000 ns/op
+Result 66: 500 op, 501550.00 ns, 1.0031 us/op
+Result 67: 500 op, 506350.00 ns, 1.0127 us/op
+Result 68: 500 op, 252950.00 ns, 505.9000 ns/op
+Result 69: 500 op, 251850.00 ns, 503.7000 ns/op
+Result 70: 500 op, 396850.00 ns, 793.7000 ns/op
+Result 71: 500 op, 310050.00 ns, 620.1000 ns/op
+Result 72: 500 op, 266650.00 ns, 533.3000 ns/op
+Result 73: 500 op, 272650.00 ns, 545.3000 ns/op
+Result 74: 500 op, 297350.00 ns, 594.7000 ns/op
+Result 75: 500 op, 260550.00 ns, 521.1000 ns/op
+Result 76: 500 op, 315750.00 ns, 631.5000 ns/op
+Result 77: 500 op, 302750.00 ns, 605.5000 ns/op
+Result 78: 500 op, 252450.00 ns, 504.9000 ns/op
+Result 79: 500 op, 282750.00 ns, 565.5000 ns/op
+Result 80: 500 op, 652850.00 ns, 1.3057 us/op
+Result 81: 500 op, 253650.00 ns, 507.3000 ns/op
+Result 82: 500 op, 254450.00 ns, 508.9000 ns/op
+Result 83: 500 op, 370750.00 ns, 741.5000 ns/op
+Result 84: 500 op, 300550.00 ns, 601.1000 ns/op
+Result 85: 500 op, 357650.00 ns, 715.3000 ns/op
+Result 86: 500 op, 377650.00 ns, 755.3000 ns/op
+Result 87: 500 op, 263450.00 ns, 526.9000 ns/op
+Result 88: 500 op, 272850.00 ns, 545.7000 ns/op
+Result 89: 500 op, 275150.00 ns, 550.3000 ns/op
+Result 90: 500 op, 568450.00 ns, 1.1369 us/op
+Result 91: 500 op, 455350.00 ns, 910.7000 ns/op
+Result 92: 500 op, 352150.00 ns, 704.3000 ns/op
+Result 93: 500 op, 416850.00 ns, 833.7000 ns/op
+Result 94: 500 op, 257750.00 ns, 515.5000 ns/op
+Result 95: 500 op, 403350.00 ns, 806.7000 ns/op
+Result 96: 500 op, 254050.00 ns, 508.1000 ns/op
+GC:  0 0 0 136000 500
+
+// AfterAll
+
+Mean = 653.8521 ns, StdErr = 19.6691 ns (3.01%); N = 96, StdDev = 192.7173 ns
+Min = 498.9000 ns, Q1 = 507.0000 ns, Median = 553.1000 ns, Q3 = 797.7000 ns, Max = 1,305.7000 ns
+IQR = 290.7000 ns, LowerFence = 70.9500 ns, UpperFence = 1,233.7500 ns
+ConfidenceInterval = [587.0576 ns; 720.6465 ns] (CI 99.9%), Margin = 66.7945 ns (10.22% of Mean)
+Skewness = 1.17, Kurtosis = 3.29, MValue = 2.62
+
+// **************************
+// Benchmark: CopyFromStreamToStream.CopyToStream: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=100]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-SQFQBA(InvocationCount=500, UnrollFactor=1)
+
+IdleWarmup  1: 500 op, 175500.00 ns, 351.0000 ns/op
+IdleWarmup  2: 500 op, 2700.00 ns, 5.4000 ns/op
+IdleWarmup  3: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleWarmup  4: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleWarmup  5: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  6: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleWarmup  7: 500 op, 1300.00 ns, 2.6000 ns/op
+
+IdleTarget  1: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  2: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  3: 500 op, 1800.00 ns, 3.6000 ns/op
+IdleTarget  4: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  5: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget  6: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget  7: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  8: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  9: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 10: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 11: 500 op, 3700.00 ns, 7.4000 ns/op
+IdleTarget 12: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 13: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 14: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 15: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 16: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 17: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 18: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 19: 500 op, 1300.00 ns, 2.6000 ns/op
+
+MainWarmup  1: 500 op, 463000.00 ns, 926.0000 ns/op
+MainWarmup  2: 500 op, 266200.00 ns, 532.4000 ns/op
+MainWarmup  3: 500 op, 536400.00 ns, 1.0728 us/op
+MainWarmup  4: 500 op, 266200.00 ns, 532.4000 ns/op
+MainWarmup  5: 500 op, 262600.00 ns, 525.2000 ns/op
+MainWarmup  6: 500 op, 261200.00 ns, 522.4000 ns/op
+MainWarmup  7: 500 op, 261300.00 ns, 522.6000 ns/op
+MainWarmup  8: 500 op, 253000.00 ns, 506.0000 ns/op
+
+// BeforeMainRun
+MainTarget  1: 500 op, 258500.00 ns, 517.0000 ns/op
+MainTarget  2: 500 op, 286900.00 ns, 573.8000 ns/op
+MainTarget  3: 500 op, 258100.00 ns, 516.2000 ns/op
+MainTarget  4: 500 op, 257600.00 ns, 515.2000 ns/op
+MainTarget  5: 500 op, 255000.00 ns, 510.0000 ns/op
+MainTarget  6: 500 op, 266900.00 ns, 533.8000 ns/op
+MainTarget  7: 500 op, 258700.00 ns, 517.4000 ns/op
+MainTarget  8: 500 op, 259400.00 ns, 518.8000 ns/op
+MainTarget  9: 500 op, 253800.00 ns, 507.6000 ns/op
+MainTarget 10: 500 op, 255400.00 ns, 510.8000 ns/op
+MainTarget 11: 500 op, 255800.00 ns, 511.6000 ns/op
+MainTarget 12: 500 op, 257900.00 ns, 515.8000 ns/op
+MainTarget 13: 500 op, 258100.00 ns, 516.2000 ns/op
+MainTarget 14: 500 op, 286000.00 ns, 572.0000 ns/op
+MainTarget 15: 500 op, 274600.00 ns, 549.2000 ns/op
+
+// AfterMainRun
+Result  1: 500 op, 257042.11 ns, 514.0842 ns/op
+Result  2: 500 op, 256642.11 ns, 513.2842 ns/op
+Result  3: 500 op, 256142.11 ns, 512.2842 ns/op
+Result  4: 500 op, 253542.11 ns, 507.0842 ns/op
+Result  5: 500 op, 265442.11 ns, 530.8842 ns/op
+Result  6: 500 op, 257242.11 ns, 514.4842 ns/op
+Result  7: 500 op, 257942.11 ns, 515.8842 ns/op
+Result  8: 500 op, 252342.11 ns, 504.6842 ns/op
+Result  9: 500 op, 253942.11 ns, 507.8842 ns/op
+Result 10: 500 op, 254342.11 ns, 508.6842 ns/op
+Result 11: 500 op, 256442.11 ns, 512.8842 ns/op
+Result 12: 500 op, 256642.11 ns, 513.2842 ns/op
+Result 13: 500 op, 273142.11 ns, 546.2842 ns/op
+GC:  0 0 0 200000 500
+
+// AfterAll
+
+Mean = 515.5150 ns, StdErr = 3.1079 ns (0.60%); N = 13, StdDev = 11.2056 ns
+Min = 504.6842 ns, Q1 = 508.2842 ns, Median = 513.2842 ns, Q3 = 515.1842 ns, Max = 546.2842 ns
+IQR = 6.9000 ns, LowerFence = 497.9342 ns, UpperFence = 525.5342 ns
+ConfidenceInterval = [502.0958 ns; 528.9342 ns] (CI 99.9%), Margin = 13.4192 ns (2.60% of Mean)
+Skewness = 1.64, Kurtosis = 4.77, MValue = 2
+
+// **************************
+// Benchmark: CopyFromStreamToStream.CopyToStreamFromManager: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=100]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-SYMYKP(InvocationCount=500, UnrollFactor=1)
+
+IdleWarmup  1: 500 op, 189400.00 ns, 378.8000 ns/op
+IdleWarmup  2: 500 op, 4000.00 ns, 8.0000 ns/op
+IdleWarmup  3: 500 op, 1600.00 ns, 3.2000 ns/op
+IdleWarmup  4: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleWarmup  5: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleWarmup  6: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleWarmup  7: 500 op, 4200.00 ns, 8.4000 ns/op
+IdleWarmup  8: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleWarmup  9: 500 op, 1400.00 ns, 2.8000 ns/op
+
+IdleTarget  1: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  2: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  3: 500 op, 1600.00 ns, 3.2000 ns/op
+IdleTarget  4: 500 op, 3100.00 ns, 6.2000 ns/op
+IdleTarget  5: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  6: 500 op, 2100.00 ns, 4.2000 ns/op
+IdleTarget  7: 500 op, 1600.00 ns, 3.2000 ns/op
+IdleTarget  8: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  9: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 10: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget 11: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget 12: 500 op, 5500.00 ns, 11.0000 ns/op
+IdleTarget 13: 500 op, 6300.00 ns, 12.6000 ns/op
+IdleTarget 14: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget 15: 500 op, 3300.00 ns, 6.6000 ns/op
+IdleTarget 16: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget 17: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 18: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget 19: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget 20: 500 op, 1400.00 ns, 2.8000 ns/op
+
+MainWarmup  1: 500 op, 7804400.00 ns, 15.6088 us/op
+MainWarmup  2: 500 op, 5596000.00 ns, 11.1920 us/op
+MainWarmup  3: 500 op, 3674100.00 ns, 7.3482 us/op
+MainWarmup  4: 500 op, 3649500.00 ns, 7.2990 us/op
+MainWarmup  5: 500 op, 3770500.00 ns, 7.5410 us/op
+MainWarmup  6: 500 op, 3649300.00 ns, 7.2986 us/op
+MainWarmup  7: 500 op, 3763700.00 ns, 7.5274 us/op
+MainWarmup  8: 500 op, 4260300.00 ns, 8.5206 us/op
+MainWarmup  9: 500 op, 3665900.00 ns, 7.3318 us/op
+
+// BeforeMainRun
+MainTarget  1: 500 op, 3897800.00 ns, 7.7956 us/op
+MainTarget  2: 500 op, 3758900.00 ns, 7.5178 us/op
+MainTarget  3: 500 op, 3706300.00 ns, 7.4126 us/op
+MainTarget  4: 500 op, 3626300.00 ns, 7.2526 us/op
+MainTarget  5: 500 op, 3720800.00 ns, 7.4416 us/op
+MainTarget  6: 500 op, 4353800.00 ns, 8.7076 us/op
+MainTarget  7: 500 op, 3706500.00 ns, 7.4130 us/op
+MainTarget  8: 500 op, 3663400.00 ns, 7.3268 us/op
+MainTarget  9: 500 op, 3665800.00 ns, 7.3316 us/op
+MainTarget 10: 500 op, 4581600.00 ns, 9.1632 us/op
+MainTarget 11: 500 op, 4179700.00 ns, 8.3594 us/op
+MainTarget 12: 500 op, 5494500.00 ns, 10.9890 us/op
+MainTarget 13: 500 op, 3714200.00 ns, 7.4284 us/op
+MainTarget 14: 500 op, 4110900.00 ns, 8.2218 us/op
+MainTarget 15: 500 op, 3869200.00 ns, 7.7384 us/op
+MainTarget 16: 500 op, 4440000.00 ns, 8.8800 us/op
+MainTarget 17: 500 op, 4468900.00 ns, 8.9378 us/op
+MainTarget 18: 500 op, 4120100.00 ns, 8.2402 us/op
+MainTarget 19: 500 op, 3604400.00 ns, 7.2088 us/op
+MainTarget 20: 500 op, 4745700.00 ns, 9.4914 us/op
+MainTarget 21: 500 op, 3689400.00 ns, 7.3788 us/op
+MainTarget 22: 500 op, 4946300.00 ns, 9.8926 us/op
+MainTarget 23: 500 op, 3720500.00 ns, 7.4410 us/op
+MainTarget 24: 500 op, 4784200.00 ns, 9.5684 us/op
+MainTarget 25: 500 op, 3656200.00 ns, 7.3124 us/op
+MainTarget 26: 500 op, 4936400.00 ns, 9.8728 us/op
+MainTarget 27: 500 op, 3880800.00 ns, 7.7616 us/op
+MainTarget 28: 500 op, 5230100.00 ns, 10.4602 us/op
+MainTarget 29: 500 op, 3684600.00 ns, 7.3692 us/op
+MainTarget 30: 500 op, 4601600.00 ns, 9.2032 us/op
+MainTarget 31: 500 op, 4106600.00 ns, 8.2132 us/op
+MainTarget 32: 500 op, 3849200.00 ns, 7.6984 us/op
+MainTarget 33: 500 op, 4707300.00 ns, 9.4146 us/op
+MainTarget 34: 500 op, 3840000.00 ns, 7.6800 us/op
+MainTarget 35: 500 op, 4777000.00 ns, 9.5540 us/op
+MainTarget 36: 500 op, 3730200.00 ns, 7.4604 us/op
+MainTarget 37: 500 op, 4531300.00 ns, 9.0626 us/op
+MainTarget 38: 500 op, 4085800.00 ns, 8.1716 us/op
+MainTarget 39: 500 op, 4014700.00 ns, 8.0294 us/op
+MainTarget 40: 500 op, 4067600.00 ns, 8.1352 us/op
+MainTarget 41: 500 op, 3745100.00 ns, 7.4902 us/op
+MainTarget 42: 500 op, 3641800.00 ns, 7.2836 us/op
+MainTarget 43: 500 op, 4018900.00 ns, 8.0378 us/op
+MainTarget 44: 500 op, 3753700.00 ns, 7.5074 us/op
+MainTarget 45: 500 op, 5040200.00 ns, 10.0804 us/op
+MainTarget 46: 500 op, 4076100.00 ns, 8.1522 us/op
+MainTarget 47: 500 op, 4303900.00 ns, 8.6078 us/op
+MainTarget 48: 500 op, 3834900.00 ns, 7.6698 us/op
+MainTarget 49: 500 op, 5197400.00 ns, 10.3948 us/op
+MainTarget 50: 500 op, 4551500.00 ns, 9.1030 us/op
+MainTarget 51: 500 op, 3682300.00 ns, 7.3646 us/op
+MainTarget 52: 500 op, 4243400.00 ns, 8.4868 us/op
+MainTarget 53: 500 op, 3716800.00 ns, 7.4336 us/op
+MainTarget 54: 500 op, 4729300.00 ns, 9.4586 us/op
+MainTarget 55: 500 op, 3811900.00 ns, 7.6238 us/op
+MainTarget 56: 500 op, 6497900.00 ns, 12.9958 us/op
+MainTarget 57: 500 op, 4552500.00 ns, 9.1050 us/op
+MainTarget 58: 500 op, 3995800.00 ns, 7.9916 us/op
+MainTarget 59: 500 op, 5056800.00 ns, 10.1136 us/op
+MainTarget 60: 500 op, 3665700.00 ns, 7.3314 us/op
+MainTarget 61: 500 op, 4700500.00 ns, 9.4010 us/op
+MainTarget 62: 500 op, 3690600.00 ns, 7.3812 us/op
+MainTarget 63: 500 op, 4552800.00 ns, 9.1056 us/op
+MainTarget 64: 500 op, 3867800.00 ns, 7.7356 us/op
+MainTarget 65: 500 op, 3694600.00 ns, 7.3892 us/op
+MainTarget 66: 500 op, 3713100.00 ns, 7.4262 us/op
+MainTarget 67: 500 op, 3959800.00 ns, 7.9196 us/op
+MainTarget 68: 500 op, 3694400.00 ns, 7.3888 us/op
+MainTarget 69: 500 op, 3760600.00 ns, 7.5212 us/op
+MainTarget 70: 500 op, 3926200.00 ns, 7.8524 us/op
+MainTarget 71: 500 op, 3726500.00 ns, 7.4530 us/op
+MainTarget 72: 500 op, 3734200.00 ns, 7.4684 us/op
+MainTarget 73: 500 op, 3740200.00 ns, 7.4804 us/op
+MainTarget 74: 500 op, 3612800.00 ns, 7.2256 us/op
+MainTarget 75: 500 op, 3728300.00 ns, 7.4566 us/op
+MainTarget 76: 500 op, 3849600.00 ns, 7.6992 us/op
+MainTarget 77: 500 op, 3677800.00 ns, 7.3556 us/op
+MainTarget 78: 500 op, 3781500.00 ns, 7.5630 us/op
+MainTarget 79: 500 op, 3781800.00 ns, 7.5636 us/op
+MainTarget 80: 500 op, 3700200.00 ns, 7.4004 us/op
+MainTarget 81: 500 op, 3677900.00 ns, 7.3558 us/op
+MainTarget 82: 500 op, 3686000.00 ns, 7.3720 us/op
+MainTarget 83: 500 op, 3736800.00 ns, 7.4736 us/op
+MainTarget 84: 500 op, 5216700.00 ns, 10.4334 us/op
+MainTarget 85: 500 op, 3791200.00 ns, 7.5824 us/op
+MainTarget 86: 500 op, 3627500.00 ns, 7.2550 us/op
+MainTarget 87: 500 op, 3970400.00 ns, 7.9408 us/op
+MainTarget 88: 500 op, 3702300.00 ns, 7.4046 us/op
+MainTarget 89: 500 op, 4770600.00 ns, 9.5412 us/op
+MainTarget 90: 500 op, 5098500.00 ns, 10.1970 us/op
+MainTarget 91: 500 op, 4410000.00 ns, 8.8200 us/op
+MainTarget 92: 500 op, 4001200.00 ns, 8.0024 us/op
+MainTarget 93: 500 op, 3614700.00 ns, 7.2294 us/op
+MainTarget 94: 500 op, 4121200.00 ns, 8.2424 us/op
+MainTarget 95: 500 op, 3844800.00 ns, 7.6896 us/op
+MainTarget 96: 500 op, 3500200.00 ns, 7.0004 us/op
+MainTarget 97: 500 op, 4093800.00 ns, 8.1876 us/op
+MainTarget 98: 500 op, 3624300.00 ns, 7.2486 us/op
+MainTarget 99: 500 op, 3504300.00 ns, 7.0086 us/op
+MainTarget 100: 500 op, 3501300.00 ns, 7.0026 us/op
+
+// AfterMainRun
+Result  1: 500 op, 3895665.00 ns, 7.7913 us/op
+Result  2: 500 op, 3756765.00 ns, 7.5135 us/op
+Result  3: 500 op, 3704165.00 ns, 7.4083 us/op
+Result  4: 500 op, 3624165.00 ns, 7.2483 us/op
+Result  5: 500 op, 3718665.00 ns, 7.4373 us/op
+Result  6: 500 op, 4351665.00 ns, 8.7033 us/op
+Result  7: 500 op, 3704365.00 ns, 7.4087 us/op
+Result  8: 500 op, 3661265.00 ns, 7.3225 us/op
+Result  9: 500 op, 3663665.00 ns, 7.3273 us/op
+Result 10: 500 op, 4579465.00 ns, 9.1589 us/op
+Result 11: 500 op, 4177565.00 ns, 8.3551 us/op
+Result 12: 500 op, 5492365.00 ns, 10.9847 us/op
+Result 13: 500 op, 3712065.00 ns, 7.4241 us/op
+Result 14: 500 op, 4108765.00 ns, 8.2175 us/op
+Result 15: 500 op, 3867065.00 ns, 7.7341 us/op
+Result 16: 500 op, 4437865.00 ns, 8.8757 us/op
+Result 17: 500 op, 4466765.00 ns, 8.9335 us/op
+Result 18: 500 op, 4117965.00 ns, 8.2359 us/op
+Result 19: 500 op, 3602265.00 ns, 7.2045 us/op
+Result 20: 500 op, 4743565.00 ns, 9.4871 us/op
+Result 21: 500 op, 3687265.00 ns, 7.3745 us/op
+Result 22: 500 op, 4944165.00 ns, 9.8883 us/op
+Result 23: 500 op, 3718365.00 ns, 7.4367 us/op
+Result 24: 500 op, 4782065.00 ns, 9.5641 us/op
+Result 25: 500 op, 3654065.00 ns, 7.3081 us/op
+Result 26: 500 op, 4934265.00 ns, 9.8685 us/op
+Result 27: 500 op, 3878665.00 ns, 7.7573 us/op
+Result 28: 500 op, 5227965.00 ns, 10.4559 us/op
+Result 29: 500 op, 3682465.00 ns, 7.3649 us/op
+Result 30: 500 op, 4599465.00 ns, 9.1989 us/op
+Result 31: 500 op, 4104465.00 ns, 8.2089 us/op
+Result 32: 500 op, 3847065.00 ns, 7.6941 us/op
+Result 33: 500 op, 4705165.00 ns, 9.4103 us/op
+Result 34: 500 op, 3837865.00 ns, 7.6757 us/op
+Result 35: 500 op, 4774865.00 ns, 9.5497 us/op
+Result 36: 500 op, 3728065.00 ns, 7.4561 us/op
+Result 37: 500 op, 4529165.00 ns, 9.0583 us/op
+Result 38: 500 op, 4083665.00 ns, 8.1673 us/op
+Result 39: 500 op, 4012565.00 ns, 8.0251 us/op
+Result 40: 500 op, 4065465.00 ns, 8.1309 us/op
+Result 41: 500 op, 3742965.00 ns, 7.4859 us/op
+Result 42: 500 op, 3639665.00 ns, 7.2793 us/op
+Result 43: 500 op, 4016765.00 ns, 8.0335 us/op
+Result 44: 500 op, 3751565.00 ns, 7.5031 us/op
+Result 45: 500 op, 5038065.00 ns, 10.0761 us/op
+Result 46: 500 op, 4073965.00 ns, 8.1479 us/op
+Result 47: 500 op, 4301765.00 ns, 8.6035 us/op
+Result 48: 500 op, 3832765.00 ns, 7.6655 us/op
+Result 49: 500 op, 5195265.00 ns, 10.3905 us/op
+Result 50: 500 op, 4549365.00 ns, 9.0987 us/op
+Result 51: 500 op, 3680165.00 ns, 7.3603 us/op
+Result 52: 500 op, 4241265.00 ns, 8.4825 us/op
+Result 53: 500 op, 3714665.00 ns, 7.4293 us/op
+Result 54: 500 op, 4727165.00 ns, 9.4543 us/op
+Result 55: 500 op, 3809765.00 ns, 7.6195 us/op
+Result 56: 500 op, 4550365.00 ns, 9.1007 us/op
+Result 57: 500 op, 3993665.00 ns, 7.9873 us/op
+Result 58: 500 op, 5054665.00 ns, 10.1093 us/op
+Result 59: 500 op, 3663565.00 ns, 7.3271 us/op
+Result 60: 500 op, 4698365.00 ns, 9.3967 us/op
+Result 61: 500 op, 3688465.00 ns, 7.3769 us/op
+Result 62: 500 op, 4550665.00 ns, 9.1013 us/op
+Result 63: 500 op, 3865665.00 ns, 7.7313 us/op
+Result 64: 500 op, 3692465.00 ns, 7.3849 us/op
+Result 65: 500 op, 3710965.00 ns, 7.4219 us/op
+Result 66: 500 op, 3957665.00 ns, 7.9153 us/op
+Result 67: 500 op, 3692265.00 ns, 7.3845 us/op
+Result 68: 500 op, 3758465.00 ns, 7.5169 us/op
+Result 69: 500 op, 3924065.00 ns, 7.8481 us/op
+Result 70: 500 op, 3724365.00 ns, 7.4487 us/op
+Result 71: 500 op, 3732065.00 ns, 7.4641 us/op
+Result 72: 500 op, 3738065.00 ns, 7.4761 us/op
+Result 73: 500 op, 3610665.00 ns, 7.2213 us/op
+Result 74: 500 op, 3726165.00 ns, 7.4523 us/op
+Result 75: 500 op, 3847465.00 ns, 7.6949 us/op
+Result 76: 500 op, 3675665.00 ns, 7.3513 us/op
+Result 77: 500 op, 3779365.00 ns, 7.5587 us/op
+Result 78: 500 op, 3779665.00 ns, 7.5593 us/op
+Result 79: 500 op, 3698065.00 ns, 7.3961 us/op
+Result 80: 500 op, 3675765.00 ns, 7.3515 us/op
+Result 81: 500 op, 3683865.00 ns, 7.3677 us/op
+Result 82: 500 op, 3734665.00 ns, 7.4693 us/op
+Result 83: 500 op, 5214565.00 ns, 10.4291 us/op
+Result 84: 500 op, 3789065.00 ns, 7.5781 us/op
+Result 85: 500 op, 3625365.00 ns, 7.2507 us/op
+Result 86: 500 op, 3968265.00 ns, 7.9365 us/op
+Result 87: 500 op, 3700165.00 ns, 7.4003 us/op
+Result 88: 500 op, 4768465.00 ns, 9.5369 us/op
+Result 89: 500 op, 5096365.00 ns, 10.1927 us/op
+Result 90: 500 op, 4407865.00 ns, 8.8157 us/op
+Result 91: 500 op, 3999065.00 ns, 7.9981 us/op
+Result 92: 500 op, 3612565.00 ns, 7.2251 us/op
+Result 93: 500 op, 4119065.00 ns, 8.2381 us/op
+Result 94: 500 op, 3842665.00 ns, 7.6853 us/op
+Result 95: 500 op, 3498065.00 ns, 6.9961 us/op
+Result 96: 500 op, 4091665.00 ns, 8.1833 us/op
+Result 97: 500 op, 3622165.00 ns, 7.2443 us/op
+Result 98: 500 op, 3502165.00 ns, 7.0043 us/op
+Result 99: 500 op, 3499165.00 ns, 6.9983 us/op
+GC:  0 0 0 272000 500
+
+// AfterAll
+
+Mean = 8.1225 us, StdErr = 0.0975 us (1.20%); N = 99, StdDev = 0.9704 us
+Min = 6.9961 us, Q1 = 7.4003 us, Median = 7.6941 us, Q3 = 8.8157 us, Max = 10.9847 us
+IQR = 1.4154 us, LowerFence = 5.2772 us, UpperFence = 10.9388 us
+ConfidenceInterval = [7.7916 us; 8.4534 us] (CI 99.9%), Margin = 0.3309 us (4.07% of Mean)
+Skewness = 1.09, Kurtosis = 3.06, MValue = 2.7
+
+// **************************
+// Benchmark: CopyFromStreamToStream.CopyToStreamFromManagerInsideUsing: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=100]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-RLRARR(InvocationCount=500, UnrollFactor=1)
+
+IdleWarmup  1: 500 op, 167000.00 ns, 334.0000 ns/op
+IdleWarmup  2: 500 op, 3400.00 ns, 6.8000 ns/op
+IdleWarmup  3: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  4: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleWarmup  5: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  6: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  7: 500 op, 3200.00 ns, 6.4000 ns/op
+
+IdleTarget  1: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  2: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  3: 500 op, 7900.00 ns, 15.8000 ns/op
+IdleTarget  4: 500 op, 3800.00 ns, 7.6000 ns/op
+IdleTarget  5: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  6: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  7: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  8: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget  9: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 10: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 11: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 12: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 13: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 14: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 15: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 16: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 17: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 18: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 19: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 20: 500 op, 1700.00 ns, 3.4000 ns/op
+
+MainWarmup  1: 500 op, 5350400.00 ns, 10.7008 us/op
+MainWarmup  2: 500 op, 5427400.00 ns, 10.8548 us/op
+MainWarmup  3: 500 op, 5434100.00 ns, 10.8682 us/op
+MainWarmup  4: 500 op, 5717500.00 ns, 11.4350 us/op
+MainWarmup  5: 500 op, 5655400.00 ns, 11.3108 us/op
+MainWarmup  6: 500 op, 5370400.00 ns, 10.7408 us/op
+MainWarmup  7: 500 op, 5475800.00 ns, 10.9516 us/op
+MainWarmup  8: 500 op, 6198400.00 ns, 12.3968 us/op
+MainWarmup  9: 500 op, 5646500.00 ns, 11.2930 us/op
+
+// BeforeMainRun
+MainTarget  1: 500 op, 5531600.00 ns, 11.0632 us/op
+MainTarget  2: 500 op, 5186400.00 ns, 10.3728 us/op
+MainTarget  3: 500 op, 5403500.00 ns, 10.8070 us/op
+MainTarget  4: 500 op, 5423500.00 ns, 10.8470 us/op
+MainTarget  5: 500 op, 5357900.00 ns, 10.7158 us/op
+MainTarget  6: 500 op, 5412400.00 ns, 10.8248 us/op
+MainTarget  7: 500 op, 5519500.00 ns, 11.0390 us/op
+MainTarget  8: 500 op, 6229600.00 ns, 12.4592 us/op
+MainTarget  9: 500 op, 6303400.00 ns, 12.6068 us/op
+MainTarget 10: 500 op, 6311300.00 ns, 12.6226 us/op
+MainTarget 11: 500 op, 6052900.00 ns, 12.1058 us/op
+MainTarget 12: 500 op, 5668800.00 ns, 11.3376 us/op
+MainTarget 13: 500 op, 5541600.00 ns, 11.0832 us/op
+MainTarget 14: 500 op, 5291800.00 ns, 10.5836 us/op
+MainTarget 15: 500 op, 5809500.00 ns, 11.6190 us/op
+MainTarget 16: 500 op, 5494200.00 ns, 10.9884 us/op
+MainTarget 17: 500 op, 6042000.00 ns, 12.0840 us/op
+MainTarget 18: 500 op, 5756500.00 ns, 11.5130 us/op
+MainTarget 19: 500 op, 5930400.00 ns, 11.8608 us/op
+MainTarget 20: 500 op, 6005700.00 ns, 12.0114 us/op
+MainTarget 21: 500 op, 5413500.00 ns, 10.8270 us/op
+MainTarget 22: 500 op, 7900700.00 ns, 15.8014 us/op
+MainTarget 23: 500 op, 6789700.00 ns, 13.5794 us/op
+MainTarget 24: 500 op, 6453200.00 ns, 12.9064 us/op
+MainTarget 25: 500 op, 5845900.00 ns, 11.6918 us/op
+MainTarget 26: 500 op, 5873400.00 ns, 11.7468 us/op
+MainTarget 27: 500 op, 5817000.00 ns, 11.6340 us/op
+MainTarget 28: 500 op, 5408600.00 ns, 10.8172 us/op
+MainTarget 29: 500 op, 5789100.00 ns, 11.5782 us/op
+MainTarget 30: 500 op, 5574800.00 ns, 11.1496 us/op
+MainTarget 31: 500 op, 5723200.00 ns, 11.4464 us/op
+MainTarget 32: 500 op, 5937100.00 ns, 11.8742 us/op
+MainTarget 33: 500 op, 5421600.00 ns, 10.8432 us/op
+MainTarget 34: 500 op, 5861100.00 ns, 11.7222 us/op
+MainTarget 35: 500 op, 6072600.00 ns, 12.1452 us/op
+MainTarget 36: 500 op, 6062700.00 ns, 12.1254 us/op
+MainTarget 37: 500 op, 5500200.00 ns, 11.0004 us/op
+MainTarget 38: 500 op, 5880700.00 ns, 11.7614 us/op
+MainTarget 39: 500 op, 5808600.00 ns, 11.6172 us/op
+MainTarget 40: 500 op, 5250600.00 ns, 10.5012 us/op
+MainTarget 41: 500 op, 5680800.00 ns, 11.3616 us/op
+MainTarget 42: 500 op, 5982800.00 ns, 11.9656 us/op
+MainTarget 43: 500 op, 5468400.00 ns, 10.9368 us/op
+MainTarget 44: 500 op, 5360600.00 ns, 10.7212 us/op
+MainTarget 45: 500 op, 5260300.00 ns, 10.5206 us/op
+MainTarget 46: 500 op, 5694800.00 ns, 11.3896 us/op
+MainTarget 47: 500 op, 8014100.00 ns, 16.0282 us/op
+MainTarget 48: 500 op, 5981400.00 ns, 11.9628 us/op
+MainTarget 49: 500 op, 6991900.00 ns, 13.9838 us/op
+MainTarget 50: 500 op, 5865700.00 ns, 11.7314 us/op
+MainTarget 51: 500 op, 5777700.00 ns, 11.5554 us/op
+MainTarget 52: 500 op, 5712300.00 ns, 11.4246 us/op
+MainTarget 53: 500 op, 6358300.00 ns, 12.7166 us/op
+MainTarget 54: 500 op, 5449200.00 ns, 10.8984 us/op
+MainTarget 55: 500 op, 5728700.00 ns, 11.4574 us/op
+MainTarget 56: 500 op, 5502400.00 ns, 11.0048 us/op
+MainTarget 57: 500 op, 6234900.00 ns, 12.4698 us/op
+MainTarget 58: 500 op, 5780000.00 ns, 11.5600 us/op
+MainTarget 59: 500 op, 5529200.00 ns, 11.0584 us/op
+MainTarget 60: 500 op, 7070200.00 ns, 14.1404 us/op
+MainTarget 61: 500 op, 5395500.00 ns, 10.7910 us/op
+MainTarget 62: 500 op, 5607800.00 ns, 11.2156 us/op
+MainTarget 63: 500 op, 5542000.00 ns, 11.0840 us/op
+MainTarget 64: 500 op, 5722800.00 ns, 11.4456 us/op
+MainTarget 65: 500 op, 5538400.00 ns, 11.0768 us/op
+MainTarget 66: 500 op, 5450700.00 ns, 10.9014 us/op
+MainTarget 67: 500 op, 7941900.00 ns, 15.8838 us/op
+MainTarget 68: 500 op, 5530000.00 ns, 11.0600 us/op
+MainTarget 69: 500 op, 5659000.00 ns, 11.3180 us/op
+MainTarget 70: 500 op, 5453300.00 ns, 10.9066 us/op
+MainTarget 71: 500 op, 5471200.00 ns, 10.9424 us/op
+MainTarget 72: 500 op, 5605800.00 ns, 11.2116 us/op
+MainTarget 73: 500 op, 5684700.00 ns, 11.3694 us/op
+MainTarget 74: 500 op, 5620700.00 ns, 11.2414 us/op
+MainTarget 75: 500 op, 5514800.00 ns, 11.0296 us/op
+MainTarget 76: 500 op, 5646600.00 ns, 11.2932 us/op
+MainTarget 77: 500 op, 5527900.00 ns, 11.0558 us/op
+MainTarget 78: 500 op, 5296100.00 ns, 10.5922 us/op
+MainTarget 79: 500 op, 5495100.00 ns, 10.9902 us/op
+MainTarget 80: 500 op, 5685000.00 ns, 11.3700 us/op
+
+// AfterMainRun
+Result  1: 500 op, 5529830.00 ns, 11.0597 us/op
+Result  2: 500 op, 5184630.00 ns, 10.3693 us/op
+Result  3: 500 op, 5401730.00 ns, 10.8035 us/op
+Result  4: 500 op, 5421730.00 ns, 10.8435 us/op
+Result  5: 500 op, 5356130.00 ns, 10.7123 us/op
+Result  6: 500 op, 5410630.00 ns, 10.8213 us/op
+Result  7: 500 op, 5517730.00 ns, 11.0355 us/op
+Result  8: 500 op, 6227830.00 ns, 12.4557 us/op
+Result  9: 500 op, 6301630.00 ns, 12.6033 us/op
+Result 10: 500 op, 6309530.00 ns, 12.6191 us/op
+Result 11: 500 op, 6051130.00 ns, 12.1023 us/op
+Result 12: 500 op, 5667030.00 ns, 11.3341 us/op
+Result 13: 500 op, 5539830.00 ns, 11.0797 us/op
+Result 14: 500 op, 5290030.00 ns, 10.5801 us/op
+Result 15: 500 op, 5807730.00 ns, 11.6155 us/op
+Result 16: 500 op, 5492430.00 ns, 10.9849 us/op
+Result 17: 500 op, 6040230.00 ns, 12.0805 us/op
+Result 18: 500 op, 5754730.00 ns, 11.5095 us/op
+Result 19: 500 op, 5928630.00 ns, 11.8573 us/op
+Result 20: 500 op, 6003930.00 ns, 12.0079 us/op
+Result 21: 500 op, 5411730.00 ns, 10.8235 us/op
+Result 22: 500 op, 6451430.00 ns, 12.9029 us/op
+Result 23: 500 op, 5844130.00 ns, 11.6883 us/op
+Result 24: 500 op, 5871630.00 ns, 11.7433 us/op
+Result 25: 500 op, 5815230.00 ns, 11.6305 us/op
+Result 26: 500 op, 5406830.00 ns, 10.8137 us/op
+Result 27: 500 op, 5787330.00 ns, 11.5747 us/op
+Result 28: 500 op, 5573030.00 ns, 11.1461 us/op
+Result 29: 500 op, 5721430.00 ns, 11.4429 us/op
+Result 30: 500 op, 5935330.00 ns, 11.8707 us/op
+Result 31: 500 op, 5419830.00 ns, 10.8397 us/op
+Result 32: 500 op, 5859330.00 ns, 11.7187 us/op
+Result 33: 500 op, 6070830.00 ns, 12.1417 us/op
+Result 34: 500 op, 6060930.00 ns, 12.1219 us/op
+Result 35: 500 op, 5498430.00 ns, 10.9969 us/op
+Result 36: 500 op, 5878930.00 ns, 11.7579 us/op
+Result 37: 500 op, 5806830.00 ns, 11.6137 us/op
+Result 38: 500 op, 5248830.00 ns, 10.4977 us/op
+Result 39: 500 op, 5679030.00 ns, 11.3581 us/op
+Result 40: 500 op, 5981030.00 ns, 11.9621 us/op
+Result 41: 500 op, 5466630.00 ns, 10.9333 us/op
+Result 42: 500 op, 5358830.00 ns, 10.7177 us/op
+Result 43: 500 op, 5258530.00 ns, 10.5171 us/op
+Result 44: 500 op, 5693030.00 ns, 11.3861 us/op
+Result 45: 500 op, 5979630.00 ns, 11.9593 us/op
+Result 46: 500 op, 5863930.00 ns, 11.7279 us/op
+Result 47: 500 op, 5775930.00 ns, 11.5519 us/op
+Result 48: 500 op, 5710530.00 ns, 11.4211 us/op
+Result 49: 500 op, 6356530.00 ns, 12.7131 us/op
+Result 50: 500 op, 5447430.00 ns, 10.8949 us/op
+Result 51: 500 op, 5726930.00 ns, 11.4539 us/op
+Result 52: 500 op, 5500630.00 ns, 11.0013 us/op
+Result 53: 500 op, 6233130.00 ns, 12.4663 us/op
+Result 54: 500 op, 5778230.00 ns, 11.5565 us/op
+Result 55: 500 op, 5527430.00 ns, 11.0549 us/op
+Result 56: 500 op, 5393730.00 ns, 10.7875 us/op
+Result 57: 500 op, 5606030.00 ns, 11.2121 us/op
+Result 58: 500 op, 5540230.00 ns, 11.0805 us/op
+Result 59: 500 op, 5721030.00 ns, 11.4421 us/op
+Result 60: 500 op, 5536630.00 ns, 11.0733 us/op
+Result 61: 500 op, 5448930.00 ns, 10.8979 us/op
+Result 62: 500 op, 5528230.00 ns, 11.0565 us/op
+Result 63: 500 op, 5657230.00 ns, 11.3145 us/op
+Result 64: 500 op, 5451530.00 ns, 10.9031 us/op
+Result 65: 500 op, 5469430.00 ns, 10.9389 us/op
+Result 66: 500 op, 5604030.00 ns, 11.2081 us/op
+Result 67: 500 op, 5682930.00 ns, 11.3659 us/op
+Result 68: 500 op, 5618930.00 ns, 11.2379 us/op
+Result 69: 500 op, 5513030.00 ns, 11.0261 us/op
+Result 70: 500 op, 5644830.00 ns, 11.2897 us/op
+Result 71: 500 op, 5526130.00 ns, 11.0523 us/op
+Result 72: 500 op, 5294330.00 ns, 10.5887 us/op
+Result 73: 500 op, 5493330.00 ns, 10.9867 us/op
+Result 74: 500 op, 5683230.00 ns, 11.3665 us/op
+GC:  0 0 0 448000 500
+
+// AfterAll
+
+Mean = 11.3689 us, StdErr = 0.0663 us (0.58%); N = 74, StdDev = 0.5701 us
+Min = 10.3693 us, Q1 = 10.9389 us, Median = 11.3021 us, Q3 = 11.7187 us, Max = 12.9029 us
+IQR = 0.7798 us, LowerFence = 9.7692 us, UpperFence = 12.8884 us
+ConfidenceInterval = [11.1417 us; 11.5962 us] (CI 99.9%), Margin = 0.2272 us (2.00% of Mean)
+Skewness = 0.68, Kurtosis = 2.88, MValue = 2
+
+// **************************
+// Benchmark: CopyFromStreamToStream.ArraySegment: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=512]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-FHMQOT(InvocationCount=500, UnrollFactor=1)
+
+IdleWarmup  1: 500 op, 179500.00 ns, 359.0000 ns/op
+IdleWarmup  2: 500 op, 2800.00 ns, 5.6000 ns/op
+IdleWarmup  3: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleWarmup  4: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleWarmup  5: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleWarmup  6: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleWarmup  7: 500 op, 1400.00 ns, 2.8000 ns/op
+
+IdleTarget  1: 500 op, 1900.00 ns, 3.8000 ns/op
+IdleTarget  2: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  3: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  4: 500 op, 1800.00 ns, 3.6000 ns/op
+IdleTarget  5: 500 op, 1600.00 ns, 3.2000 ns/op
+IdleTarget  6: 500 op, 1800.00 ns, 3.6000 ns/op
+IdleTarget  7: 500 op, 1900.00 ns, 3.8000 ns/op
+IdleTarget  8: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  9: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 10: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget 11: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 12: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 13: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget 14: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 15: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget 16: 500 op, 2300.00 ns, 4.6000 ns/op
+IdleTarget 17: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 18: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget 19: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 20: 500 op, 1400.00 ns, 2.8000 ns/op
+
+MainWarmup  1: 500 op, 1296000.00 ns, 2.5920 us/op
+MainWarmup  2: 500 op, 1573000.00 ns, 3.1460 us/op
+MainWarmup  3: 500 op, 1171800.00 ns, 2.3436 us/op
+MainWarmup  4: 500 op, 1190300.00 ns, 2.3806 us/op
+MainWarmup  5: 500 op, 1217000.00 ns, 2.4340 us/op
+MainWarmup  6: 500 op, 1170500.00 ns, 2.3410 us/op
+
+// BeforeMainRun
+MainTarget  1: 500 op, 1246200.00 ns, 2.4924 us/op
+MainTarget  2: 500 op, 1173500.00 ns, 2.3470 us/op
+MainTarget  3: 500 op, 1206700.00 ns, 2.4134 us/op
+MainTarget  4: 500 op, 1327400.00 ns, 2.6548 us/op
+MainTarget  5: 500 op, 1240300.00 ns, 2.4806 us/op
+MainTarget  6: 500 op, 1199900.00 ns, 2.3998 us/op
+MainTarget  7: 500 op, 1288400.00 ns, 2.5768 us/op
+MainTarget  8: 500 op, 1205200.00 ns, 2.4104 us/op
+MainTarget  9: 500 op, 1197400.00 ns, 2.3948 us/op
+MainTarget 10: 500 op, 1225800.00 ns, 2.4516 us/op
+MainTarget 11: 500 op, 1259800.00 ns, 2.5196 us/op
+MainTarget 12: 500 op, 1908800.00 ns, 3.8176 us/op
+MainTarget 13: 500 op, 2071700.00 ns, 4.1434 us/op
+MainTarget 14: 500 op, 1197400.00 ns, 2.3948 us/op
+MainTarget 15: 500 op, 1886400.00 ns, 3.7728 us/op
+MainTarget 16: 500 op, 1216700.00 ns, 2.4334 us/op
+MainTarget 17: 500 op, 1179700.00 ns, 2.3594 us/op
+MainTarget 18: 500 op, 1172800.00 ns, 2.3456 us/op
+MainTarget 19: 500 op, 1332800.00 ns, 2.6656 us/op
+MainTarget 20: 500 op, 1220200.00 ns, 2.4404 us/op
+MainTarget 21: 500 op, 1180900.00 ns, 2.3618 us/op
+MainTarget 22: 500 op, 1223800.00 ns, 2.4476 us/op
+MainTarget 23: 500 op, 1236000.00 ns, 2.4720 us/op
+MainTarget 24: 500 op, 1207700.00 ns, 2.4154 us/op
+MainTarget 25: 500 op, 1191600.00 ns, 2.3832 us/op
+MainTarget 26: 500 op, 1184300.00 ns, 2.3686 us/op
+MainTarget 27: 500 op, 1586800.00 ns, 3.1736 us/op
+MainTarget 28: 500 op, 1290800.00 ns, 2.5816 us/op
+MainTarget 29: 500 op, 1265300.00 ns, 2.5306 us/op
+MainTarget 30: 500 op, 1280900.00 ns, 2.5618 us/op
+MainTarget 31: 500 op, 1180100.00 ns, 2.3602 us/op
+MainTarget 32: 500 op, 1202900.00 ns, 2.4058 us/op
+MainTarget 33: 500 op, 1199000.00 ns, 2.3980 us/op
+MainTarget 34: 500 op, 1199000.00 ns, 2.3980 us/op
+MainTarget 35: 500 op, 1764600.00 ns, 3.5292 us/op
+MainTarget 36: 500 op, 1508300.00 ns, 3.0166 us/op
+MainTarget 37: 500 op, 1188700.00 ns, 2.3774 us/op
+MainTarget 38: 500 op, 1207900.00 ns, 2.4158 us/op
+MainTarget 39: 500 op, 1341000.00 ns, 2.6820 us/op
+MainTarget 40: 500 op, 1174700.00 ns, 2.3494 us/op
+MainTarget 41: 500 op, 1179300.00 ns, 2.3586 us/op
+MainTarget 42: 500 op, 1198300.00 ns, 2.3966 us/op
+MainTarget 43: 500 op, 1636800.00 ns, 3.2736 us/op
+MainTarget 44: 500 op, 1196600.00 ns, 2.3932 us/op
+MainTarget 45: 500 op, 1187600.00 ns, 2.3752 us/op
+MainTarget 46: 500 op, 1421700.00 ns, 2.8434 us/op
+MainTarget 47: 500 op, 1180600.00 ns, 2.3612 us/op
+MainTarget 48: 500 op, 1197300.00 ns, 2.3946 us/op
+MainTarget 49: 500 op, 1180000.00 ns, 2.3600 us/op
+MainTarget 50: 500 op, 1192900.00 ns, 2.3858 us/op
+MainTarget 51: 500 op, 1226000.00 ns, 2.4520 us/op
+MainTarget 52: 500 op, 1200900.00 ns, 2.4018 us/op
+MainTarget 53: 500 op, 1205200.00 ns, 2.4104 us/op
+
+// AfterMainRun
+Result  1: 500 op, 1244620.00 ns, 2.4892 us/op
+Result  2: 500 op, 1171920.00 ns, 2.3438 us/op
+Result  3: 500 op, 1205120.00 ns, 2.4102 us/op
+Result  4: 500 op, 1325820.00 ns, 2.6516 us/op
+Result  5: 500 op, 1238720.00 ns, 2.4774 us/op
+Result  6: 500 op, 1198320.00 ns, 2.3966 us/op
+Result  7: 500 op, 1286820.00 ns, 2.5736 us/op
+Result  8: 500 op, 1203620.00 ns, 2.4072 us/op
+Result  9: 500 op, 1195820.00 ns, 2.3916 us/op
+Result 10: 500 op, 1224220.00 ns, 2.4484 us/op
+Result 11: 500 op, 1258220.00 ns, 2.5164 us/op
+Result 12: 500 op, 1195820.00 ns, 2.3916 us/op
+Result 13: 500 op, 1215120.00 ns, 2.4302 us/op
+Result 14: 500 op, 1178120.00 ns, 2.3562 us/op
+Result 15: 500 op, 1171220.00 ns, 2.3424 us/op
+Result 16: 500 op, 1331220.00 ns, 2.6624 us/op
+Result 17: 500 op, 1218620.00 ns, 2.4372 us/op
+Result 18: 500 op, 1179320.00 ns, 2.3586 us/op
+Result 19: 500 op, 1222220.00 ns, 2.4444 us/op
+Result 20: 500 op, 1234420.00 ns, 2.4688 us/op
+Result 21: 500 op, 1206120.00 ns, 2.4122 us/op
+Result 22: 500 op, 1190020.00 ns, 2.3800 us/op
+Result 23: 500 op, 1182720.00 ns, 2.3654 us/op
+Result 24: 500 op, 1289220.00 ns, 2.5784 us/op
+Result 25: 500 op, 1263720.00 ns, 2.5274 us/op
+Result 26: 500 op, 1279320.00 ns, 2.5586 us/op
+Result 27: 500 op, 1178520.00 ns, 2.3570 us/op
+Result 28: 500 op, 1201320.00 ns, 2.4026 us/op
+Result 29: 500 op, 1197420.00 ns, 2.3948 us/op
+Result 30: 500 op, 1197420.00 ns, 2.3948 us/op
+Result 31: 500 op, 1187120.00 ns, 2.3742 us/op
+Result 32: 500 op, 1206320.00 ns, 2.4126 us/op
+Result 33: 500 op, 1339420.00 ns, 2.6788 us/op
+Result 34: 500 op, 1173120.00 ns, 2.3462 us/op
+Result 35: 500 op, 1177720.00 ns, 2.3554 us/op
+Result 36: 500 op, 1196720.00 ns, 2.3934 us/op
+Result 37: 500 op, 1195020.00 ns, 2.3900 us/op
+Result 38: 500 op, 1186020.00 ns, 2.3720 us/op
+Result 39: 500 op, 1420120.00 ns, 2.8402 us/op
+Result 40: 500 op, 1179020.00 ns, 2.3580 us/op
+Result 41: 500 op, 1195720.00 ns, 2.3914 us/op
+Result 42: 500 op, 1178420.00 ns, 2.3568 us/op
+Result 43: 500 op, 1191320.00 ns, 2.3826 us/op
+Result 44: 500 op, 1224420.00 ns, 2.4488 us/op
+Result 45: 500 op, 1199320.00 ns, 2.3986 us/op
+Result 46: 500 op, 1203620.00 ns, 2.4072 us/op
+GC:  0 0 0 340000 500
+
+// AfterAll
+
+Mean = 2.4408 us, StdErr = 0.0155 us (0.63%); N = 46, StdDev = 0.1050 us
+Min = 2.3424 us, Q1 = 2.3742 us, Median = 2.4006 us, Q3 = 2.4688 us, Max = 2.8402 us
+IQR = 0.0946 us, LowerFence = 2.2323 us, UpperFence = 2.6107 us
+ConfidenceInterval = [2.3863 us; 2.4953 us] (CI 99.9%), Margin = 0.0545 us (2.23% of Mean)
+Skewness = 1.81, Kurtosis = 6.2, MValue = 2
+
+// **************************
+// Benchmark: CopyFromStreamToStream.CopyToStream: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=512]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-HEEOMJ(InvocationCount=500, UnrollFactor=1)
+
+IdleWarmup  1: 500 op, 227000.00 ns, 454.0000 ns/op
+IdleWarmup  2: 500 op, 2600.00 ns, 5.2000 ns/op
+IdleWarmup  3: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleWarmup  4: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  5: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  6: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  7: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  8: 500 op, 1300.00 ns, 2.6000 ns/op
+
+IdleTarget  1: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  2: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  3: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  4: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  5: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  6: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  7: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  8: 500 op, 1800.00 ns, 3.6000 ns/op
+IdleTarget  9: 500 op, 1700.00 ns, 3.4000 ns/op
+IdleTarget 10: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 11: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 12: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 13: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 14: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 15: 500 op, 1300.00 ns, 2.6000 ns/op
+
+MainWarmup  1: 500 op, 1470100.00 ns, 2.9402 us/op
+MainWarmup  2: 500 op, 1234300.00 ns, 2.4686 us/op
+MainWarmup  3: 500 op, 1273800.00 ns, 2.5476 us/op
+MainWarmup  4: 500 op, 1217800.00 ns, 2.4356 us/op
+MainWarmup  5: 500 op, 1244300.00 ns, 2.4886 us/op
+MainWarmup  6: 500 op, 1221400.00 ns, 2.4428 us/op
+
+// BeforeMainRun
+MainTarget  1: 500 op, 1414800.00 ns, 2.8296 us/op
+MainTarget  2: 500 op, 1304500.00 ns, 2.6090 us/op
+MainTarget  3: 500 op, 1230200.00 ns, 2.4604 us/op
+MainTarget  4: 500 op, 1251000.00 ns, 2.5020 us/op
+MainTarget  5: 500 op, 1262900.00 ns, 2.5258 us/op
+MainTarget  6: 500 op, 1211000.00 ns, 2.4220 us/op
+MainTarget  7: 500 op, 1215200.00 ns, 2.4304 us/op
+MainTarget  8: 500 op, 1194000.00 ns, 2.3880 us/op
+MainTarget  9: 500 op, 1218200.00 ns, 2.4364 us/op
+MainTarget 10: 500 op, 1197900.00 ns, 2.3958 us/op
+MainTarget 11: 500 op, 1204700.00 ns, 2.4094 us/op
+MainTarget 12: 500 op, 2139000.00 ns, 4.2780 us/op
+MainTarget 13: 500 op, 1220000.00 ns, 2.4400 us/op
+MainTarget 14: 500 op, 1521400.00 ns, 3.0428 us/op
+MainTarget 15: 500 op, 1219600.00 ns, 2.4392 us/op
+MainTarget 16: 500 op, 1222400.00 ns, 2.4448 us/op
+MainTarget 17: 500 op, 1218400.00 ns, 2.4368 us/op
+MainTarget 18: 500 op, 1594600.00 ns, 3.1892 us/op
+MainTarget 19: 500 op, 1249200.00 ns, 2.4984 us/op
+MainTarget 20: 500 op, 1225400.00 ns, 2.4508 us/op
+MainTarget 21: 500 op, 2108300.00 ns, 4.2166 us/op
+MainTarget 22: 500 op, 1310500.00 ns, 2.6210 us/op
+MainTarget 23: 500 op, 1204100.00 ns, 2.4082 us/op
+MainTarget 24: 500 op, 3579200.00 ns, 7.1584 us/op
+MainTarget 25: 500 op, 1249300.00 ns, 2.4986 us/op
+MainTarget 26: 500 op, 1352700.00 ns, 2.7054 us/op
+MainTarget 27: 500 op, 1196100.00 ns, 2.3922 us/op
+MainTarget 28: 500 op, 1181600.00 ns, 2.3632 us/op
+MainTarget 29: 500 op, 1197200.00 ns, 2.3944 us/op
+MainTarget 30: 500 op, 1183800.00 ns, 2.3676 us/op
+MainTarget 31: 500 op, 1187900.00 ns, 2.3758 us/op
+MainTarget 32: 500 op, 1269700.00 ns, 2.5394 us/op
+MainTarget 33: 500 op, 1210800.00 ns, 2.4216 us/op
+MainTarget 34: 500 op, 1187400.00 ns, 2.3748 us/op
+MainTarget 35: 500 op, 1209300.00 ns, 2.4186 us/op
+MainTarget 36: 500 op, 1179200.00 ns, 2.3584 us/op
+MainTarget 37: 500 op, 1168800.00 ns, 2.3376 us/op
+MainTarget 38: 500 op, 1156800.00 ns, 2.3136 us/op
+MainTarget 39: 500 op, 1152900.00 ns, 2.3058 us/op
+MainTarget 40: 500 op, 1566000.00 ns, 3.1320 us/op
+MainTarget 41: 500 op, 1185400.00 ns, 2.3708 us/op
+MainTarget 42: 500 op, 1247800.00 ns, 2.4956 us/op
+MainTarget 43: 500 op, 1227200.00 ns, 2.4544 us/op
+MainTarget 44: 500 op, 1182300.00 ns, 2.3646 us/op
+MainTarget 45: 500 op, 1165000.00 ns, 2.3300 us/op
+MainTarget 46: 500 op, 1164800.00 ns, 2.3296 us/op
+MainTarget 47: 500 op, 1154600.00 ns, 2.3092 us/op
+MainTarget 48: 500 op, 1197800.00 ns, 2.3956 us/op
+
+// AfterMainRun
+Result  1: 500 op, 1303140.00 ns, 2.6063 us/op
+Result  2: 500 op, 1228840.00 ns, 2.4577 us/op
+Result  3: 500 op, 1249640.00 ns, 2.4993 us/op
+Result  4: 500 op, 1261540.00 ns, 2.5231 us/op
+Result  5: 500 op, 1209640.00 ns, 2.4193 us/op
+Result  6: 500 op, 1213840.00 ns, 2.4277 us/op
+Result  7: 500 op, 1192640.00 ns, 2.3853 us/op
+Result  8: 500 op, 1216840.00 ns, 2.4337 us/op
+Result  9: 500 op, 1196540.00 ns, 2.3931 us/op
+Result 10: 500 op, 1203340.00 ns, 2.4067 us/op
+Result 11: 500 op, 1218640.00 ns, 2.4373 us/op
+Result 12: 500 op, 1218240.00 ns, 2.4365 us/op
+Result 13: 500 op, 1221040.00 ns, 2.4421 us/op
+Result 14: 500 op, 1217040.00 ns, 2.4341 us/op
+Result 15: 500 op, 1247840.00 ns, 2.4957 us/op
+Result 16: 500 op, 1224040.00 ns, 2.4481 us/op
+Result 17: 500 op, 1309140.00 ns, 2.6183 us/op
+Result 18: 500 op, 1202740.00 ns, 2.4055 us/op
+Result 19: 500 op, 1247940.00 ns, 2.4959 us/op
+Result 20: 500 op, 1351340.00 ns, 2.7027 us/op
+Result 21: 500 op, 1194740.00 ns, 2.3895 us/op
+Result 22: 500 op, 1180240.00 ns, 2.3605 us/op
+Result 23: 500 op, 1195840.00 ns, 2.3917 us/op
+Result 24: 500 op, 1182440.00 ns, 2.3649 us/op
+Result 25: 500 op, 1186540.00 ns, 2.3731 us/op
+Result 26: 500 op, 1268340.00 ns, 2.5367 us/op
+Result 27: 500 op, 1209440.00 ns, 2.4189 us/op
+Result 28: 500 op, 1186040.00 ns, 2.3721 us/op
+Result 29: 500 op, 1207940.00 ns, 2.4159 us/op
+Result 30: 500 op, 1177840.00 ns, 2.3557 us/op
+Result 31: 500 op, 1167440.00 ns, 2.3349 us/op
+Result 32: 500 op, 1155440.00 ns, 2.3109 us/op
+Result 33: 500 op, 1151540.00 ns, 2.3031 us/op
+Result 34: 500 op, 1184040.00 ns, 2.3681 us/op
+Result 35: 500 op, 1246440.00 ns, 2.4929 us/op
+Result 36: 500 op, 1225840.00 ns, 2.4517 us/op
+Result 37: 500 op, 1180940.00 ns, 2.3619 us/op
+Result 38: 500 op, 1163640.00 ns, 2.3273 us/op
+Result 39: 500 op, 1163440.00 ns, 2.3269 us/op
+Result 40: 500 op, 1153240.00 ns, 2.3065 us/op
+Result 41: 500 op, 1196440.00 ns, 2.3929 us/op
+GC:  0 0 0 608000 500
+
+// AfterAll
+
+Mean = 2.4250 us, StdErr = 0.0134 us (0.55%); N = 41, StdDev = 0.0857 us
+Min = 2.3031 us, Q1 = 2.3665 us, Median = 2.4159 us, Q3 = 2.4547 us, Max = 2.7027 us
+IQR = 0.0882 us, LowerFence = 2.2342 us, UpperFence = 2.5870 us
+ConfidenceInterval = [2.3774 us; 2.4725 us] (CI 99.9%), Margin = 0.0475 us (1.96% of Mean)
+Skewness = 1.13, Kurtosis = 4.39, MValue = 2
+
+// **************************
+// Benchmark: CopyFromStreamToStream.CopyToStreamFromManager: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=512]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-HFLNNH(InvocationCount=500, UnrollFactor=1)
+
+IdleWarmup  1: 500 op, 180700.00 ns, 361.4000 ns/op
+IdleWarmup  2: 500 op, 2600.00 ns, 5.2000 ns/op
+IdleWarmup  3: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleWarmup  4: 500 op, 5000.00 ns, 10.0000 ns/op
+IdleWarmup  5: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleWarmup  6: 500 op, 1800.00 ns, 3.6000 ns/op
+IdleWarmup  7: 500 op, 1600.00 ns, 3.2000 ns/op
+
+IdleTarget  1: 500 op, 1600.00 ns, 3.2000 ns/op
+IdleTarget  2: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  3: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  4: 500 op, 1700.00 ns, 3.4000 ns/op
+IdleTarget  5: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  6: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  7: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  8: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  9: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 10: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 11: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 12: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 13: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 14: 500 op, 1700.00 ns, 3.4000 ns/op
+IdleTarget 15: 500 op, 3600.00 ns, 7.2000 ns/op
+IdleTarget 16: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 17: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 18: 500 op, 1700.00 ns, 3.4000 ns/op
+IdleTarget 19: 500 op, 2300.00 ns, 4.6000 ns/op
+IdleTarget 20: 500 op, 3800.00 ns, 7.6000 ns/op
+
+MainWarmup  1: 500 op, 24416400.00 ns, 48.8328 us/op
+MainWarmup  2: 500 op, 20858000.00 ns, 41.7160 us/op
+MainWarmup  3: 500 op, 18129700.00 ns, 36.2594 us/op
+MainWarmup  4: 500 op, 23829500.00 ns, 47.6590 us/op
+MainWarmup  5: 500 op, 17958100.00 ns, 35.9162 us/op
+MainWarmup  6: 500 op, 20441500.00 ns, 40.8830 us/op
+MainWarmup  7: 500 op, 18953100.00 ns, 37.9062 us/op
+
+// BeforeMainRun
+MainTarget  1: 500 op, 17734800.00 ns, 35.4696 us/op
+MainTarget  2: 500 op, 17141700.00 ns, 34.2834 us/op
+MainTarget  3: 500 op, 17212300.00 ns, 34.4246 us/op
+MainTarget  4: 500 op, 18892000.00 ns, 37.7840 us/op
+MainTarget  5: 500 op, 17030400.00 ns, 34.0608 us/op
+MainTarget  6: 500 op, 17541500.00 ns, 35.0830 us/op
+MainTarget  7: 500 op, 16903000.00 ns, 33.8060 us/op
+MainTarget  8: 500 op, 16926600.00 ns, 33.8532 us/op
+MainTarget  9: 500 op, 16241500.00 ns, 32.4830 us/op
+MainTarget 10: 500 op, 17168300.00 ns, 34.3366 us/op
+MainTarget 11: 500 op, 17002700.00 ns, 34.0054 us/op
+MainTarget 12: 500 op, 17196200.00 ns, 34.3924 us/op
+MainTarget 13: 500 op, 16413500.00 ns, 32.8270 us/op
+MainTarget 14: 500 op, 15936900.00 ns, 31.8738 us/op
+MainTarget 15: 500 op, 16546900.00 ns, 33.0938 us/op
+MainTarget 16: 500 op, 16375600.00 ns, 32.7512 us/op
+MainTarget 17: 500 op, 16265400.00 ns, 32.5308 us/op
+MainTarget 18: 500 op, 16604700.00 ns, 33.2094 us/op
+MainTarget 19: 500 op, 16546200.00 ns, 33.0924 us/op
+MainTarget 20: 500 op, 16420000.00 ns, 32.8400 us/op
+MainTarget 21: 500 op, 16034500.00 ns, 32.0690 us/op
+MainTarget 22: 500 op, 20512500.00 ns, 41.0250 us/op
+MainTarget 23: 500 op, 15849700.00 ns, 31.6994 us/op
+MainTarget 24: 500 op, 16534800.00 ns, 33.0696 us/op
+MainTarget 25: 500 op, 16064300.00 ns, 32.1286 us/op
+MainTarget 26: 500 op, 16239600.00 ns, 32.4792 us/op
+MainTarget 27: 500 op, 16436400.00 ns, 32.8728 us/op
+MainTarget 28: 500 op, 17095200.00 ns, 34.1904 us/op
+MainTarget 29: 500 op, 16055500.00 ns, 32.1110 us/op
+MainTarget 30: 500 op, 15903500.00 ns, 31.8070 us/op
+MainTarget 31: 500 op, 16278300.00 ns, 32.5566 us/op
+MainTarget 32: 500 op, 15937900.00 ns, 31.8758 us/op
+MainTarget 33: 500 op, 15797800.00 ns, 31.5956 us/op
+MainTarget 34: 500 op, 16151000.00 ns, 32.3020 us/op
+MainTarget 35: 500 op, 16694300.00 ns, 33.3886 us/op
+
+// AfterMainRun
+Result  1: 500 op, 17733055.00 ns, 35.4661 us/op
+Result  2: 500 op, 17139955.00 ns, 34.2799 us/op
+Result  3: 500 op, 17210555.00 ns, 34.4211 us/op
+Result  4: 500 op, 17028655.00 ns, 34.0573 us/op
+Result  5: 500 op, 17539755.00 ns, 35.0795 us/op
+Result  6: 500 op, 16901255.00 ns, 33.8025 us/op
+Result  7: 500 op, 16924855.00 ns, 33.8497 us/op
+Result  8: 500 op, 16239755.00 ns, 32.4795 us/op
+Result  9: 500 op, 17166555.00 ns, 34.3331 us/op
+Result 10: 500 op, 17000955.00 ns, 34.0019 us/op
+Result 11: 500 op, 17194455.00 ns, 34.3889 us/op
+Result 12: 500 op, 16411755.00 ns, 32.8235 us/op
+Result 13: 500 op, 15935155.00 ns, 31.8703 us/op
+Result 14: 500 op, 16545155.00 ns, 33.0903 us/op
+Result 15: 500 op, 16373855.00 ns, 32.7477 us/op
+Result 16: 500 op, 16263655.00 ns, 32.5273 us/op
+Result 17: 500 op, 16602955.00 ns, 33.2059 us/op
+Result 18: 500 op, 16544455.00 ns, 33.0889 us/op
+Result 19: 500 op, 16418255.00 ns, 32.8365 us/op
+Result 20: 500 op, 16032755.00 ns, 32.0655 us/op
+Result 21: 500 op, 15847955.00 ns, 31.6959 us/op
+Result 22: 500 op, 16533055.00 ns, 33.0661 us/op
+Result 23: 500 op, 16062555.00 ns, 32.1251 us/op
+Result 24: 500 op, 16237855.00 ns, 32.4757 us/op
+Result 25: 500 op, 16434655.00 ns, 32.8693 us/op
+Result 26: 500 op, 17093455.00 ns, 34.1869 us/op
+Result 27: 500 op, 16053755.00 ns, 32.1075 us/op
+Result 28: 500 op, 15901755.00 ns, 31.8035 us/op
+Result 29: 500 op, 16276555.00 ns, 32.5531 us/op
+Result 30: 500 op, 15936155.00 ns, 31.8723 us/op
+Result 31: 500 op, 15796055.00 ns, 31.5921 us/op
+Result 32: 500 op, 16149255.00 ns, 32.2985 us/op
+Result 33: 500 op, 16692555.00 ns, 33.3851 us/op
+GC:  0 0 0 272000 500
+
+// AfterAll
+
+Mean = 33.1044 us, StdErr = 0.1800 us (0.54%); N = 33, StdDev = 1.0340 us
+Min = 31.5921 us, Q1 = 32.2118 us, Median = 32.8693 us, Q3 = 34.0296 us, Max = 35.4661 us
+IQR = 1.8178 us, LowerFence = 29.4851 us, UpperFence = 36.7563 us
+ConfidenceInterval = [32.4525 us; 33.7564 us] (CI 99.9%), Margin = 0.6519 us (1.97% of Mean)
+Skewness = 0.43, Kurtosis = 2.13, MValue = 2
+
+// **************************
+// Benchmark: CopyFromStreamToStream.CopyToStreamFromManagerInsideUsing: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=512]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-VTIICL(InvocationCount=500, UnrollFactor=1)
+
+IdleWarmup  1: 500 op, 246900.00 ns, 493.8000 ns/op
+IdleWarmup  2: 500 op, 2300.00 ns, 4.6000 ns/op
+IdleWarmup  3: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  4: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  5: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  6: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  7: 500 op, 1200.00 ns, 2.4000 ns/op
+
+IdleTarget  1: 500 op, 1700.00 ns, 3.4000 ns/op
+IdleTarget  2: 500 op, 3100.00 ns, 6.2000 ns/op
+IdleTarget  3: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  4: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  5: 500 op, 6000.00 ns, 12.0000 ns/op
+IdleTarget  6: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  7: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  8: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  9: 500 op, 1700.00 ns, 3.4000 ns/op
+IdleTarget 10: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 11: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 12: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 13: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 14: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 15: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 16: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget 17: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 18: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 19: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 20: 500 op, 1200.00 ns, 2.4000 ns/op
+
+MainWarmup  1: 500 op, 19755600.00 ns, 39.5112 us/op
+MainWarmup  2: 500 op, 19197900.00 ns, 38.3958 us/op
+MainWarmup  3: 500 op, 18847400.00 ns, 37.6948 us/op
+MainWarmup  4: 500 op, 19363500.00 ns, 38.7270 us/op
+MainWarmup  5: 500 op, 18521200.00 ns, 37.0424 us/op
+MainWarmup  6: 500 op, 19636700.00 ns, 39.2734 us/op
+MainWarmup  7: 500 op, 18145700.00 ns, 36.2914 us/op
+
+// BeforeMainRun
+MainTarget  1: 500 op, 19236700.00 ns, 38.4734 us/op
+MainTarget  2: 500 op, 18519100.00 ns, 37.0382 us/op
+MainTarget  3: 500 op, 19275800.00 ns, 38.5516 us/op
+MainTarget  4: 500 op, 20991600.00 ns, 41.9832 us/op
+MainTarget  5: 500 op, 18604000.00 ns, 37.2080 us/op
+MainTarget  6: 500 op, 27697700.00 ns, 55.3954 us/op
+MainTarget  7: 500 op, 18703800.00 ns, 37.4076 us/op
+MainTarget  8: 500 op, 19239000.00 ns, 38.4780 us/op
+MainTarget  9: 500 op, 18852300.00 ns, 37.7046 us/op
+MainTarget 10: 500 op, 19119100.00 ns, 38.2382 us/op
+MainTarget 11: 500 op, 21565400.00 ns, 43.1308 us/op
+MainTarget 12: 500 op, 20723800.00 ns, 41.4476 us/op
+MainTarget 13: 500 op, 19246700.00 ns, 38.4934 us/op
+MainTarget 14: 500 op, 19876600.00 ns, 39.7532 us/op
+MainTarget 15: 500 op, 19280900.00 ns, 38.5618 us/op
+MainTarget 16: 500 op, 19121600.00 ns, 38.2432 us/op
+MainTarget 17: 500 op, 19030700.00 ns, 38.0614 us/op
+MainTarget 18: 500 op, 19872100.00 ns, 39.7442 us/op
+MainTarget 19: 500 op, 19621100.00 ns, 39.2422 us/op
+MainTarget 20: 500 op, 19042600.00 ns, 38.0852 us/op
+MainTarget 21: 500 op, 19983000.00 ns, 39.9660 us/op
+MainTarget 22: 500 op, 19893400.00 ns, 39.7868 us/op
+MainTarget 23: 500 op, 19623000.00 ns, 39.2460 us/op
+MainTarget 24: 500 op, 19606500.00 ns, 39.2130 us/op
+MainTarget 25: 500 op, 19056400.00 ns, 38.1128 us/op
+MainTarget 26: 500 op, 20733300.00 ns, 41.4666 us/op
+MainTarget 27: 500 op, 19033700.00 ns, 38.0674 us/op
+MainTarget 28: 500 op, 25264400.00 ns, 50.5288 us/op
+MainTarget 29: 500 op, 19137000.00 ns, 38.2740 us/op
+MainTarget 30: 500 op, 19779600.00 ns, 39.5592 us/op
+MainTarget 31: 500 op, 19476100.00 ns, 38.9522 us/op
+MainTarget 32: 500 op, 23666800.00 ns, 47.3336 us/op
+MainTarget 33: 500 op, 20090800.00 ns, 40.1816 us/op
+MainTarget 34: 500 op, 24519200.00 ns, 49.0384 us/op
+MainTarget 35: 500 op, 20021200.00 ns, 40.0424 us/op
+MainTarget 36: 500 op, 22891000.00 ns, 45.7820 us/op
+MainTarget 37: 500 op, 20504700.00 ns, 41.0094 us/op
+MainTarget 38: 500 op, 27987200.00 ns, 55.9744 us/op
+MainTarget 39: 500 op, 24914800.00 ns, 49.8296 us/op
+MainTarget 40: 500 op, 22877100.00 ns, 45.7542 us/op
+MainTarget 41: 500 op, 20081000.00 ns, 40.1620 us/op
+MainTarget 42: 500 op, 25581800.00 ns, 51.1636 us/op
+MainTarget 43: 500 op, 19152000.00 ns, 38.3040 us/op
+MainTarget 44: 500 op, 19282400.00 ns, 38.5648 us/op
+MainTarget 45: 500 op, 20792500.00 ns, 41.5850 us/op
+MainTarget 46: 500 op, 25894200.00 ns, 51.7884 us/op
+MainTarget 47: 500 op, 19396100.00 ns, 38.7922 us/op
+MainTarget 48: 500 op, 20854000.00 ns, 41.7080 us/op
+MainTarget 49: 500 op, 19560200.00 ns, 39.1204 us/op
+MainTarget 50: 500 op, 19398400.00 ns, 38.7968 us/op
+MainTarget 51: 500 op, 19414500.00 ns, 38.8290 us/op
+MainTarget 52: 500 op, 21459300.00 ns, 42.9186 us/op
+MainTarget 53: 500 op, 20733400.00 ns, 41.4668 us/op
+MainTarget 54: 500 op, 20012900.00 ns, 40.0258 us/op
+MainTarget 55: 500 op, 20976200.00 ns, 41.9524 us/op
+MainTarget 56: 500 op, 19433200.00 ns, 38.8664 us/op
+MainTarget 57: 500 op, 19760500.00 ns, 39.5210 us/op
+MainTarget 58: 500 op, 18868600.00 ns, 37.7372 us/op
+MainTarget 59: 500 op, 20326100.00 ns, 40.6522 us/op
+MainTarget 60: 500 op, 19438700.00 ns, 38.8774 us/op
+MainTarget 61: 500 op, 21097700.00 ns, 42.1954 us/op
+MainTarget 62: 500 op, 19350800.00 ns, 38.7016 us/op
+MainTarget 63: 500 op, 24238200.00 ns, 48.4764 us/op
+MainTarget 64: 500 op, 19019700.00 ns, 38.0394 us/op
+MainTarget 65: 500 op, 18728900.00 ns, 37.4578 us/op
+MainTarget 66: 500 op, 18508300.00 ns, 37.0166 us/op
+MainTarget 67: 500 op, 18825900.00 ns, 37.6518 us/op
+MainTarget 68: 500 op, 19138900.00 ns, 38.2778 us/op
+MainTarget 69: 500 op, 20397200.00 ns, 40.7944 us/op
+MainTarget 70: 500 op, 18733900.00 ns, 37.4678 us/op
+MainTarget 71: 500 op, 18974000.00 ns, 37.9480 us/op
+MainTarget 72: 500 op, 19515600.00 ns, 39.0312 us/op
+MainTarget 73: 500 op, 19486800.00 ns, 38.9736 us/op
+MainTarget 74: 500 op, 21890200.00 ns, 43.7804 us/op
+MainTarget 75: 500 op, 21163500.00 ns, 42.3270 us/op
+MainTarget 76: 500 op, 19059300.00 ns, 38.1186 us/op
+MainTarget 77: 500 op, 19331100.00 ns, 38.6622 us/op
+MainTarget 78: 500 op, 19313700.00 ns, 38.6274 us/op
+MainTarget 79: 500 op, 23534800.00 ns, 47.0696 us/op
+MainTarget 80: 500 op, 19356600.00 ns, 38.7132 us/op
+
+// AfterMainRun
+Result  1: 500 op, 19235065.00 ns, 38.4701 us/op
+Result  2: 500 op, 18517465.00 ns, 37.0349 us/op
+Result  3: 500 op, 19274165.00 ns, 38.5483 us/op
+Result  4: 500 op, 20989965.00 ns, 41.9799 us/op
+Result  5: 500 op, 18602365.00 ns, 37.2047 us/op
+Result  6: 500 op, 18702165.00 ns, 37.4043 us/op
+Result  7: 500 op, 19237365.00 ns, 38.4747 us/op
+Result  8: 500 op, 18850665.00 ns, 37.7013 us/op
+Result  9: 500 op, 19117465.00 ns, 38.2349 us/op
+Result 10: 500 op, 21563765.00 ns, 43.1275 us/op
+Result 11: 500 op, 20722165.00 ns, 41.4443 us/op
+Result 12: 500 op, 19245065.00 ns, 38.4901 us/op
+Result 13: 500 op, 19874965.00 ns, 39.7499 us/op
+Result 14: 500 op, 19279265.00 ns, 38.5585 us/op
+Result 15: 500 op, 19119965.00 ns, 38.2399 us/op
+Result 16: 500 op, 19029065.00 ns, 38.0581 us/op
+Result 17: 500 op, 19870465.00 ns, 39.7409 us/op
+Result 18: 500 op, 19619465.00 ns, 39.2389 us/op
+Result 19: 500 op, 19040965.00 ns, 38.0819 us/op
+Result 20: 500 op, 19981365.00 ns, 39.9627 us/op
+Result 21: 500 op, 19891765.00 ns, 39.7835 us/op
+Result 22: 500 op, 19621365.00 ns, 39.2427 us/op
+Result 23: 500 op, 19604865.00 ns, 39.2097 us/op
+Result 24: 500 op, 19054765.00 ns, 38.1095 us/op
+Result 25: 500 op, 20731665.00 ns, 41.4633 us/op
+Result 26: 500 op, 19032065.00 ns, 38.0641 us/op
+Result 27: 500 op, 19135365.00 ns, 38.2707 us/op
+Result 28: 500 op, 19777965.00 ns, 39.5559 us/op
+Result 29: 500 op, 19474465.00 ns, 38.9489 us/op
+Result 30: 500 op, 20089165.00 ns, 40.1783 us/op
+Result 31: 500 op, 20019565.00 ns, 40.0391 us/op
+Result 32: 500 op, 22889365.00 ns, 45.7787 us/op
+Result 33: 500 op, 20503065.00 ns, 41.0061 us/op
+Result 34: 500 op, 22875465.00 ns, 45.7509 us/op
+Result 35: 500 op, 20079365.00 ns, 40.1587 us/op
+Result 36: 500 op, 19150365.00 ns, 38.3007 us/op
+Result 37: 500 op, 19280765.00 ns, 38.5615 us/op
+Result 38: 500 op, 20790865.00 ns, 41.5817 us/op
+Result 39: 500 op, 19394465.00 ns, 38.7889 us/op
+Result 40: 500 op, 20852365.00 ns, 41.7047 us/op
+Result 41: 500 op, 19558565.00 ns, 39.1171 us/op
+Result 42: 500 op, 19396765.00 ns, 38.7935 us/op
+Result 43: 500 op, 19412865.00 ns, 38.8257 us/op
+Result 44: 500 op, 21457665.00 ns, 42.9153 us/op
+Result 45: 500 op, 20731765.00 ns, 41.4635 us/op
+Result 46: 500 op, 20011265.00 ns, 40.0225 us/op
+Result 47: 500 op, 20974565.00 ns, 41.9491 us/op
+Result 48: 500 op, 19431565.00 ns, 38.8631 us/op
+Result 49: 500 op, 19758865.00 ns, 39.5177 us/op
+Result 50: 500 op, 18866965.00 ns, 37.7339 us/op
+Result 51: 500 op, 20324465.00 ns, 40.6489 us/op
+Result 52: 500 op, 19437065.00 ns, 38.8741 us/op
+Result 53: 500 op, 21096065.00 ns, 42.1921 us/op
+Result 54: 500 op, 19349165.00 ns, 38.6983 us/op
+Result 55: 500 op, 19018065.00 ns, 38.0361 us/op
+Result 56: 500 op, 18727265.00 ns, 37.4545 us/op
+Result 57: 500 op, 18506665.00 ns, 37.0133 us/op
+Result 58: 500 op, 18824265.00 ns, 37.6485 us/op
+Result 59: 500 op, 19137265.00 ns, 38.2745 us/op
+Result 60: 500 op, 20395565.00 ns, 40.7911 us/op
+Result 61: 500 op, 18732265.00 ns, 37.4645 us/op
+Result 62: 500 op, 18972365.00 ns, 37.9447 us/op
+Result 63: 500 op, 19513965.00 ns, 39.0279 us/op
+Result 64: 500 op, 19485165.00 ns, 38.9703 us/op
+Result 65: 500 op, 21888565.00 ns, 43.7771 us/op
+Result 66: 500 op, 21161865.00 ns, 42.3237 us/op
+Result 67: 500 op, 19057665.00 ns, 38.1153 us/op
+Result 68: 500 op, 19329465.00 ns, 38.6589 us/op
+Result 69: 500 op, 19312065.00 ns, 38.6241 us/op
+Result 70: 500 op, 19354965.00 ns, 38.7099 us/op
+GC:  0 0 0 448000 500
+
+// AfterAll
+
+Mean = 39.5242 us, StdErr = 0.2279 us (0.58%); N = 70, StdDev = 1.9071 us
+Min = 37.0133 us, Q1 = 38.2399 us, Median = 38.8686 us, Q3 = 40.1783 us, Max = 45.7787 us
+IQR = 1.9384 us, LowerFence = 35.3323 us, UpperFence = 43.0859 us
+ConfidenceInterval = [38.7407 us; 40.3077 us] (CI 99.9%), Margin = 0.7835 us (1.98% of Mean)
+Skewness = 1.31, Kurtosis = 4.52, MValue = 2.64
+
+// **************************
+// Benchmark: CopyFromStreamToStream.ArraySegment: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=2048]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-XABRTI(InvocationCount=500, UnrollFactor=1)
+
+IdleWarmup  1: 500 op, 184300.00 ns, 368.6000 ns/op
+IdleWarmup  2: 500 op, 2600.00 ns, 5.2000 ns/op
+IdleWarmup  3: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleWarmup  4: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleWarmup  5: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleWarmup  6: 500 op, 2000.00 ns, 4.0000 ns/op
+IdleWarmup  7: 500 op, 1500.00 ns, 3.0000 ns/op
+
+IdleTarget  1: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  2: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  3: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  4: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  5: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  6: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  7: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  8: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  9: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget 10: 500 op, 1600.00 ns, 3.2000 ns/op
+IdleTarget 11: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget 12: 500 op, 6100.00 ns, 12.2000 ns/op
+IdleTarget 13: 500 op, 1900.00 ns, 3.8000 ns/op
+IdleTarget 14: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 15: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 16: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 17: 500 op, 1400.00 ns, 2.8000 ns/op
+
+MainWarmup  1: 500 op, 8238700.00 ns, 16.4774 us/op
+MainWarmup  2: 500 op, 4941700.00 ns, 9.8834 us/op
+MainWarmup  3: 500 op, 5209800.00 ns, 10.4196 us/op
+MainWarmup  4: 500 op, 4994300.00 ns, 9.9886 us/op
+MainWarmup  5: 500 op, 4797100.00 ns, 9.5942 us/op
+MainWarmup  6: 500 op, 5846800.00 ns, 11.6936 us/op
+MainWarmup  7: 500 op, 5221600.00 ns, 10.4432 us/op
+
+// BeforeMainRun
+MainTarget  1: 500 op, 4702100.00 ns, 9.4042 us/op
+MainTarget  2: 500 op, 5047400.00 ns, 10.0948 us/op
+MainTarget  3: 500 op, 4746600.00 ns, 9.4932 us/op
+MainTarget  4: 500 op, 4634100.00 ns, 9.2682 us/op
+MainTarget  5: 500 op, 4807800.00 ns, 9.6156 us/op
+MainTarget  6: 500 op, 5311900.00 ns, 10.6238 us/op
+MainTarget  7: 500 op, 4773100.00 ns, 9.5462 us/op
+MainTarget  8: 500 op, 5530900.00 ns, 11.0618 us/op
+MainTarget  9: 500 op, 4897900.00 ns, 9.7958 us/op
+MainTarget 10: 500 op, 4913400.00 ns, 9.8268 us/op
+MainTarget 11: 500 op, 4741900.00 ns, 9.4838 us/op
+MainTarget 12: 500 op, 4786000.00 ns, 9.5720 us/op
+MainTarget 13: 500 op, 4853200.00 ns, 9.7064 us/op
+MainTarget 14: 500 op, 4773400.00 ns, 9.5468 us/op
+MainTarget 15: 500 op, 4709900.00 ns, 9.4198 us/op
+MainTarget 16: 500 op, 5423800.00 ns, 10.8476 us/op
+MainTarget 17: 500 op, 4774300.00 ns, 9.5486 us/op
+MainTarget 18: 500 op, 4670900.00 ns, 9.3418 us/op
+MainTarget 19: 500 op, 5828100.00 ns, 11.6562 us/op
+MainTarget 20: 500 op, 4924800.00 ns, 9.8496 us/op
+MainTarget 21: 500 op, 4846800.00 ns, 9.6936 us/op
+MainTarget 22: 500 op, 4954200.00 ns, 9.9084 us/op
+MainTarget 23: 500 op, 4710500.00 ns, 9.4210 us/op
+MainTarget 24: 500 op, 4642000.00 ns, 9.2840 us/op
+
+// AfterMainRun
+Result  1: 500 op, 4700347.06 ns, 9.4007 us/op
+Result  2: 500 op, 5045647.06 ns, 10.0913 us/op
+Result  3: 500 op, 4744847.06 ns, 9.4897 us/op
+Result  4: 500 op, 4632347.06 ns, 9.2647 us/op
+Result  5: 500 op, 4806047.06 ns, 9.6121 us/op
+Result  6: 500 op, 4771347.06 ns, 9.5427 us/op
+Result  7: 500 op, 4896147.06 ns, 9.7923 us/op
+Result  8: 500 op, 4911647.06 ns, 9.8233 us/op
+Result  9: 500 op, 4740147.06 ns, 9.4803 us/op
+Result 10: 500 op, 4784247.06 ns, 9.5685 us/op
+Result 11: 500 op, 4851447.06 ns, 9.7029 us/op
+Result 12: 500 op, 4771647.06 ns, 9.5433 us/op
+Result 13: 500 op, 4708147.06 ns, 9.4163 us/op
+Result 14: 500 op, 4772547.06 ns, 9.5451 us/op
+Result 15: 500 op, 4669147.06 ns, 9.3383 us/op
+Result 16: 500 op, 4923047.06 ns, 9.8461 us/op
+Result 17: 500 op, 4845047.06 ns, 9.6901 us/op
+Result 18: 500 op, 4952447.06 ns, 9.9049 us/op
+Result 19: 500 op, 4708747.06 ns, 9.4175 us/op
+Result 20: 500 op, 4640247.06 ns, 9.2805 us/op
+GC:  0 0 0 1108000 500
+
+// AfterAll
+
+Mean = 9.5875 us, StdErr = 0.0493 us (0.51%); N = 20, StdDev = 0.2206 us
+Min = 9.2647 us, Q1 = 9.4169 us, Median = 9.5442 us, Q3 = 9.7476 us, Max = 10.0913 us
+IQR = 0.3307 us, LowerFence = 8.9208 us, UpperFence = 10.2436 us
+ConfidenceInterval = [9.3960 us; 9.7790 us] (CI 99.9%), Margin = 0.1915 us (2.00% of Mean)
+Skewness = 0.49, Kurtosis = 2.34, MValue = 2
+
+// **************************
+// Benchmark: CopyFromStreamToStream.CopyToStream: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=2048]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-GBYKBI(InvocationCount=500, UnrollFactor=1)
+
+IdleWarmup  1: 500 op, 177800.00 ns, 355.6000 ns/op
+IdleWarmup  2: 500 op, 2700.00 ns, 5.4000 ns/op
+IdleWarmup  3: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  4: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  5: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  6: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleWarmup  7: 500 op, 1200.00 ns, 2.4000 ns/op
+
+IdleTarget  1: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  2: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  3: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  4: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  5: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  6: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  7: 500 op, 2000.00 ns, 4.0000 ns/op
+IdleTarget  8: 500 op, 7900.00 ns, 15.8000 ns/op
+IdleTarget  9: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 10: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 11: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 12: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 13: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 14: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 15: 500 op, 8000.00 ns, 16.0000 ns/op
+IdleTarget 16: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 17: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 18: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 19: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 20: 500 op, 1300.00 ns, 2.6000 ns/op
+
+MainWarmup  1: 500 op, 5911200.00 ns, 11.8224 us/op
+MainWarmup  2: 500 op, 4858400.00 ns, 9.7168 us/op
+MainWarmup  3: 500 op, 4770000.00 ns, 9.5400 us/op
+MainWarmup  4: 500 op, 4908300.00 ns, 9.8166 us/op
+MainWarmup  5: 500 op, 4897000.00 ns, 9.7940 us/op
+MainWarmup  6: 500 op, 4818800.00 ns, 9.6376 us/op
+MainWarmup  7: 500 op, 5432500.00 ns, 10.8650 us/op
+MainWarmup  8: 500 op, 6109900.00 ns, 12.2198 us/op
+MainWarmup  9: 500 op, 5289500.00 ns, 10.5790 us/op
+
+// BeforeMainRun
+MainTarget  1: 500 op, 4945200.00 ns, 9.8904 us/op
+MainTarget  2: 500 op, 4838800.00 ns, 9.6776 us/op
+MainTarget  3: 500 op, 5124100.00 ns, 10.2482 us/op
+MainTarget  4: 500 op, 5128600.00 ns, 10.2572 us/op
+MainTarget  5: 500 op, 4815700.00 ns, 9.6314 us/op
+MainTarget  6: 500 op, 5745700.00 ns, 11.4914 us/op
+MainTarget  7: 500 op, 5211500.00 ns, 10.4230 us/op
+MainTarget  8: 500 op, 5156700.00 ns, 10.3134 us/op
+MainTarget  9: 500 op, 4820300.00 ns, 9.6406 us/op
+MainTarget 10: 500 op, 4885000.00 ns, 9.7700 us/op
+MainTarget 11: 500 op, 5640300.00 ns, 11.2806 us/op
+MainTarget 12: 500 op, 6230100.00 ns, 12.4602 us/op
+MainTarget 13: 500 op, 4699100.00 ns, 9.3982 us/op
+MainTarget 14: 500 op, 8617700.00 ns, 17.2354 us/op
+MainTarget 15: 500 op, 4751000.00 ns, 9.5020 us/op
+MainTarget 16: 500 op, 4969600.00 ns, 9.9392 us/op
+MainTarget 17: 500 op, 5121800.00 ns, 10.2436 us/op
+MainTarget 18: 500 op, 4791800.00 ns, 9.5836 us/op
+MainTarget 19: 500 op, 5692800.00 ns, 11.3856 us/op
+MainTarget 20: 500 op, 4828700.00 ns, 9.6574 us/op
+MainTarget 21: 500 op, 6498900.00 ns, 12.9978 us/op
+MainTarget 22: 500 op, 5347200.00 ns, 10.6944 us/op
+MainTarget 23: 500 op, 5757400.00 ns, 11.5148 us/op
+MainTarget 24: 500 op, 9604700.00 ns, 19.2094 us/op
+MainTarget 25: 500 op, 6036500.00 ns, 12.0730 us/op
+MainTarget 26: 500 op, 7204100.00 ns, 14.4082 us/op
+MainTarget 27: 500 op, 6141600.00 ns, 12.2832 us/op
+MainTarget 28: 500 op, 5093200.00 ns, 10.1864 us/op
+MainTarget 29: 500 op, 4847500.00 ns, 9.6950 us/op
+MainTarget 30: 500 op, 5066700.00 ns, 10.1334 us/op
+MainTarget 31: 500 op, 5727800.00 ns, 11.4556 us/op
+MainTarget 32: 500 op, 5099200.00 ns, 10.1984 us/op
+MainTarget 33: 500 op, 6908900.00 ns, 13.8178 us/op
+MainTarget 34: 500 op, 5419400.00 ns, 10.8388 us/op
+MainTarget 35: 500 op, 5028100.00 ns, 10.0562 us/op
+MainTarget 36: 500 op, 9185900.00 ns, 18.3718 us/op
+MainTarget 37: 500 op, 5062900.00 ns, 10.1258 us/op
+MainTarget 38: 500 op, 5331500.00 ns, 10.6630 us/op
+MainTarget 39: 500 op, 6125600.00 ns, 12.2512 us/op
+MainTarget 40: 500 op, 5955300.00 ns, 11.9106 us/op
+MainTarget 41: 500 op, 19286100.00 ns, 38.5722 us/op
+MainTarget 42: 500 op, 9016200.00 ns, 18.0324 us/op
+MainTarget 43: 500 op, 10911900.00 ns, 21.8238 us/op
+MainTarget 44: 500 op, 13891900.00 ns, 27.7838 us/op
+MainTarget 45: 500 op, 4907200.00 ns, 9.8144 us/op
+MainTarget 46: 500 op, 5519600.00 ns, 11.0392 us/op
+MainTarget 47: 500 op, 5944400.00 ns, 11.8888 us/op
+MainTarget 48: 500 op, 5630900.00 ns, 11.2618 us/op
+MainTarget 49: 500 op, 8081200.00 ns, 16.1624 us/op
+MainTarget 50: 500 op, 5911000.00 ns, 11.8220 us/op
+MainTarget 51: 500 op, 5037300.00 ns, 10.0746 us/op
+MainTarget 52: 500 op, 5081400.00 ns, 10.1628 us/op
+MainTarget 53: 500 op, 8702600.00 ns, 17.4052 us/op
+MainTarget 54: 500 op, 17027100.00 ns, 34.0542 us/op
+MainTarget 55: 500 op, 6709700.00 ns, 13.4194 us/op
+MainTarget 56: 500 op, 7706000.00 ns, 15.4120 us/op
+MainTarget 57: 500 op, 6770300.00 ns, 13.5406 us/op
+MainTarget 58: 500 op, 9473300.00 ns, 18.9466 us/op
+MainTarget 59: 500 op, 6276100.00 ns, 12.5522 us/op
+MainTarget 60: 500 op, 6957600.00 ns, 13.9152 us/op
+MainTarget 61: 500 op, 5159600.00 ns, 10.3192 us/op
+MainTarget 62: 500 op, 5597100.00 ns, 11.1942 us/op
+MainTarget 63: 500 op, 5441000.00 ns, 10.8820 us/op
+MainTarget 64: 500 op, 5361700.00 ns, 10.7234 us/op
+MainTarget 65: 500 op, 5223600.00 ns, 10.4472 us/op
+MainTarget 66: 500 op, 6488600.00 ns, 12.9772 us/op
+MainTarget 67: 500 op, 5243400.00 ns, 10.4868 us/op
+MainTarget 68: 500 op, 7799000.00 ns, 15.5980 us/op
+MainTarget 69: 500 op, 8108300.00 ns, 16.2166 us/op
+MainTarget 70: 500 op, 9016500.00 ns, 18.0330 us/op
+MainTarget 71: 500 op, 5759300.00 ns, 11.5186 us/op
+MainTarget 72: 500 op, 5080700.00 ns, 10.1614 us/op
+MainTarget 73: 500 op, 12073100.00 ns, 24.1462 us/op
+MainTarget 74: 500 op, 6841400.00 ns, 13.6828 us/op
+MainTarget 75: 500 op, 5684900.00 ns, 11.3698 us/op
+MainTarget 76: 500 op, 5052300.00 ns, 10.1046 us/op
+MainTarget 77: 500 op, 5663300.00 ns, 11.3266 us/op
+MainTarget 78: 500 op, 5210600.00 ns, 10.4212 us/op
+MainTarget 79: 500 op, 4947100.00 ns, 9.8942 us/op
+MainTarget 80: 500 op, 5218400.00 ns, 10.4368 us/op
+MainTarget 81: 500 op, 4982200.00 ns, 9.9644 us/op
+MainTarget 82: 500 op, 6145300.00 ns, 12.2906 us/op
+MainTarget 83: 500 op, 5417900.00 ns, 10.8358 us/op
+MainTarget 84: 500 op, 4877100.00 ns, 9.7542 us/op
+MainTarget 85: 500 op, 4996400.00 ns, 9.9928 us/op
+MainTarget 86: 500 op, 5047900.00 ns, 10.0958 us/op
+MainTarget 87: 500 op, 4955100.00 ns, 9.9102 us/op
+MainTarget 88: 500 op, 5172900.00 ns, 10.3458 us/op
+MainTarget 89: 500 op, 5137300.00 ns, 10.2746 us/op
+MainTarget 90: 500 op, 4848500.00 ns, 9.6970 us/op
+MainTarget 91: 500 op, 4933300.00 ns, 9.8666 us/op
+MainTarget 92: 500 op, 4887500.00 ns, 9.7750 us/op
+MainTarget 93: 500 op, 5021600.00 ns, 10.0432 us/op
+MainTarget 94: 500 op, 5287600.00 ns, 10.5752 us/op
+MainTarget 95: 500 op, 4874200.00 ns, 9.7484 us/op
+MainTarget 96: 500 op, 5003200.00 ns, 10.0064 us/op
+MainTarget 97: 500 op, 6453500.00 ns, 12.9070 us/op
+MainTarget 98: 500 op, 4966400.00 ns, 9.9328 us/op
+MainTarget 99: 500 op, 7434600.00 ns, 14.8692 us/op
+MainTarget 100: 500 op, 4929800.00 ns, 9.8596 us/op
+
+// AfterMainRun
+Result  1: 500 op, 4943190.00 ns, 9.8864 us/op
+Result  2: 500 op, 4836790.00 ns, 9.6736 us/op
+Result  3: 500 op, 5122090.00 ns, 10.2442 us/op
+Result  4: 500 op, 5126590.00 ns, 10.2532 us/op
+Result  5: 500 op, 4813690.00 ns, 9.6274 us/op
+Result  6: 500 op, 5743690.00 ns, 11.4874 us/op
+Result  7: 500 op, 5209490.00 ns, 10.4190 us/op
+Result  8: 500 op, 5154690.00 ns, 10.3094 us/op
+Result  9: 500 op, 4818290.00 ns, 9.6366 us/op
+Result 10: 500 op, 4882990.00 ns, 9.7660 us/op
+Result 11: 500 op, 5638290.00 ns, 11.2766 us/op
+Result 12: 500 op, 6228090.00 ns, 12.4562 us/op
+Result 13: 500 op, 4697090.00 ns, 9.3942 us/op
+Result 14: 500 op, 8615690.00 ns, 17.2314 us/op
+Result 15: 500 op, 4748990.00 ns, 9.4980 us/op
+Result 16: 500 op, 4967590.00 ns, 9.9352 us/op
+Result 17: 500 op, 5119790.00 ns, 10.2396 us/op
+Result 18: 500 op, 4789790.00 ns, 9.5796 us/op
+Result 19: 500 op, 5690790.00 ns, 11.3816 us/op
+Result 20: 500 op, 4826690.00 ns, 9.6534 us/op
+Result 21: 500 op, 6496890.00 ns, 12.9938 us/op
+Result 22: 500 op, 5345190.00 ns, 10.6904 us/op
+Result 23: 500 op, 5755390.00 ns, 11.5108 us/op
+Result 24: 500 op, 6034490.00 ns, 12.0690 us/op
+Result 25: 500 op, 7202090.00 ns, 14.4042 us/op
+Result 26: 500 op, 6139590.00 ns, 12.2792 us/op
+Result 27: 500 op, 5091190.00 ns, 10.1824 us/op
+Result 28: 500 op, 4845490.00 ns, 9.6910 us/op
+Result 29: 500 op, 5064690.00 ns, 10.1294 us/op
+Result 30: 500 op, 5725790.00 ns, 11.4516 us/op
+Result 31: 500 op, 5097190.00 ns, 10.1944 us/op
+Result 32: 500 op, 6906890.00 ns, 13.8138 us/op
+Result 33: 500 op, 5417390.00 ns, 10.8348 us/op
+Result 34: 500 op, 5026090.00 ns, 10.0522 us/op
+Result 35: 500 op, 5060890.00 ns, 10.1218 us/op
+Result 36: 500 op, 5329490.00 ns, 10.6590 us/op
+Result 37: 500 op, 6123590.00 ns, 12.2472 us/op
+Result 38: 500 op, 5953290.00 ns, 11.9066 us/op
+Result 39: 500 op, 4905190.00 ns, 9.8104 us/op
+Result 40: 500 op, 5517590.00 ns, 11.0352 us/op
+Result 41: 500 op, 5942390.00 ns, 11.8848 us/op
+Result 42: 500 op, 5628890.00 ns, 11.2578 us/op
+Result 43: 500 op, 8079190.00 ns, 16.1584 us/op
+Result 44: 500 op, 5908990.00 ns, 11.8180 us/op
+Result 45: 500 op, 5035290.00 ns, 10.0706 us/op
+Result 46: 500 op, 5079390.00 ns, 10.1588 us/op
+Result 47: 500 op, 6707690.00 ns, 13.4154 us/op
+Result 48: 500 op, 7703990.00 ns, 15.4080 us/op
+Result 49: 500 op, 6768290.00 ns, 13.5366 us/op
+Result 50: 500 op, 6274090.00 ns, 12.5482 us/op
+Result 51: 500 op, 6955590.00 ns, 13.9112 us/op
+Result 52: 500 op, 5157590.00 ns, 10.3152 us/op
+Result 53: 500 op, 5595090.00 ns, 11.1902 us/op
+Result 54: 500 op, 5438990.00 ns, 10.8780 us/op
+Result 55: 500 op, 5359690.00 ns, 10.7194 us/op
+Result 56: 500 op, 5221590.00 ns, 10.4432 us/op
+Result 57: 500 op, 6486590.00 ns, 12.9732 us/op
+Result 58: 500 op, 5241390.00 ns, 10.4828 us/op
+Result 59: 500 op, 7796990.00 ns, 15.5940 us/op
+Result 60: 500 op, 8106290.00 ns, 16.2126 us/op
+Result 61: 500 op, 5757290.00 ns, 11.5146 us/op
+Result 62: 500 op, 5078690.00 ns, 10.1574 us/op
+Result 63: 500 op, 6839390.00 ns, 13.6788 us/op
+Result 64: 500 op, 5682890.00 ns, 11.3658 us/op
+Result 65: 500 op, 5050290.00 ns, 10.1006 us/op
+Result 66: 500 op, 5661290.00 ns, 11.3226 us/op
+Result 67: 500 op, 5208590.00 ns, 10.4172 us/op
+Result 68: 500 op, 4945090.00 ns, 9.8902 us/op
+Result 69: 500 op, 5216390.00 ns, 10.4328 us/op
+Result 70: 500 op, 4980190.00 ns, 9.9604 us/op
+Result 71: 500 op, 6143290.00 ns, 12.2866 us/op
+Result 72: 500 op, 5415890.00 ns, 10.8318 us/op
+Result 73: 500 op, 4875090.00 ns, 9.7502 us/op
+Result 74: 500 op, 4994390.00 ns, 9.9888 us/op
+Result 75: 500 op, 5045890.00 ns, 10.0918 us/op
+Result 76: 500 op, 4953090.00 ns, 9.9062 us/op
+Result 77: 500 op, 5170890.00 ns, 10.3418 us/op
+Result 78: 500 op, 5135290.00 ns, 10.2706 us/op
+Result 79: 500 op, 4846490.00 ns, 9.6930 us/op
+Result 80: 500 op, 4931290.00 ns, 9.8626 us/op
+Result 81: 500 op, 4885490.00 ns, 9.7710 us/op
+Result 82: 500 op, 5019590.00 ns, 10.0392 us/op
+Result 83: 500 op, 5285590.00 ns, 10.5712 us/op
+Result 84: 500 op, 4872190.00 ns, 9.7444 us/op
+Result 85: 500 op, 5001190.00 ns, 10.0024 us/op
+Result 86: 500 op, 6451490.00 ns, 12.9030 us/op
+Result 87: 500 op, 4964390.00 ns, 9.9288 us/op
+Result 88: 500 op, 7432590.00 ns, 14.8652 us/op
+Result 89: 500 op, 4927790.00 ns, 9.8556 us/op
+GC:  0 0 0 2144000 500
+
+// AfterAll
+
+Mean = 11.1971 us, StdErr = 0.1853 us (1.66%); N = 89, StdDev = 1.7484 us
+Min = 9.3942 us, Q1 = 9.9746 us, Median = 10.4328 us, Q3 = 11.8957 us, Max = 17.2314 us
+IQR = 1.9211 us, LowerFence = 7.0929 us, UpperFence = 14.7773 us
+ConfidenceInterval = [10.5662 us; 11.8281 us] (CI 99.9%), Margin = 0.6310 us (5.64% of Mean)
+Skewness = 1.51, Kurtosis = 4.69, MValue = 2.71
+
+// **************************
+// Benchmark: CopyFromStreamToStream.CopyToStreamFromManager: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=2048]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-KWACLI(InvocationCount=500, UnrollFactor=1)
+
+IdleWarmup  1: 500 op, 185800.00 ns, 371.6000 ns/op
+IdleWarmup  2: 500 op, 3400.00 ns, 6.8000 ns/op
+IdleWarmup  3: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleWarmup  4: 500 op, 1600.00 ns, 3.2000 ns/op
+IdleWarmup  5: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleWarmup  6: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleWarmup  7: 500 op, 1400.00 ns, 2.8000 ns/op
+
+IdleTarget  1: 500 op, 1600.00 ns, 3.2000 ns/op
+IdleTarget  2: 500 op, 1700.00 ns, 3.4000 ns/op
+IdleTarget  3: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  4: 500 op, 1700.00 ns, 3.4000 ns/op
+IdleTarget  5: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  6: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  7: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  8: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  9: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget 10: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 11: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 12: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 13: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 14: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget 15: 500 op, 1700.00 ns, 3.4000 ns/op
+IdleTarget 16: 500 op, 1900.00 ns, 3.8000 ns/op
+IdleTarget 17: 500 op, 1800.00 ns, 3.6000 ns/op
+IdleTarget 18: 500 op, 1600.00 ns, 3.2000 ns/op
+IdleTarget 19: 500 op, 2800.00 ns, 5.6000 ns/op
+IdleTarget 20: 500 op, 1400.00 ns, 2.8000 ns/op
+
+MainWarmup  1: 500 op, 74047500.00 ns, 148.0950 us/op
+MainWarmup  2: 500 op, 71497100.00 ns, 142.9942 us/op
+MainWarmup  3: 500 op, 70149700.00 ns, 140.2994 us/op
+MainWarmup  4: 500 op, 65987300.00 ns, 131.9746 us/op
+MainWarmup  5: 500 op, 69055100.00 ns, 138.1102 us/op
+MainWarmup  6: 500 op, 69255500.00 ns, 138.5110 us/op
+MainWarmup  7: 500 op, 67514200.00 ns, 135.0284 us/op
+MainWarmup  8: 500 op, 65210700.00 ns, 130.4214 us/op
+MainWarmup  9: 500 op, 65443600.00 ns, 130.8872 us/op
+MainWarmup 10: 500 op, 65403600.00 ns, 130.8072 us/op
+
+// BeforeMainRun
+MainTarget  1: 500 op, 64061000.00 ns, 128.1220 us/op
+MainTarget  2: 500 op, 62143700.00 ns, 124.2874 us/op
+MainTarget  3: 500 op, 60083800.00 ns, 120.1676 us/op
+MainTarget  4: 500 op, 61121900.00 ns, 122.2438 us/op
+MainTarget  5: 500 op, 58854500.00 ns, 117.7090 us/op
+MainTarget  6: 500 op, 58624000.00 ns, 117.2480 us/op
+MainTarget  7: 500 op, 58874400.00 ns, 117.7488 us/op
+MainTarget  8: 500 op, 60042600.00 ns, 120.0852 us/op
+MainTarget  9: 500 op, 58887400.00 ns, 117.7748 us/op
+MainTarget 10: 500 op, 59389000.00 ns, 118.7780 us/op
+MainTarget 11: 500 op, 59349900.00 ns, 118.6998 us/op
+MainTarget 12: 500 op, 61056200.00 ns, 122.1124 us/op
+MainTarget 13: 500 op, 61837600.00 ns, 123.6752 us/op
+MainTarget 14: 500 op, 58362300.00 ns, 116.7246 us/op
+MainTarget 15: 500 op, 58859500.00 ns, 117.7190 us/op
+MainTarget 16: 500 op, 59567800.00 ns, 119.1356 us/op
+MainTarget 17: 500 op, 59465500.00 ns, 118.9310 us/op
+MainTarget 18: 500 op, 60227200.00 ns, 120.4544 us/op
+MainTarget 19: 500 op, 58399000.00 ns, 116.7980 us/op
+
+// AfterMainRun
+Result  1: 500 op, 64059385.00 ns, 128.1188 us/op
+Result  2: 500 op, 62142085.00 ns, 124.2842 us/op
+Result  3: 500 op, 60082185.00 ns, 120.1644 us/op
+Result  4: 500 op, 61120285.00 ns, 122.2406 us/op
+Result  5: 500 op, 58852885.00 ns, 117.7058 us/op
+Result  6: 500 op, 58622385.00 ns, 117.2448 us/op
+Result  7: 500 op, 58872785.00 ns, 117.7456 us/op
+Result  8: 500 op, 60040985.00 ns, 120.0820 us/op
+Result  9: 500 op, 58885785.00 ns, 117.7716 us/op
+Result 10: 500 op, 59387385.00 ns, 118.7748 us/op
+Result 11: 500 op, 59348285.00 ns, 118.6966 us/op
+Result 12: 500 op, 61054585.00 ns, 122.1092 us/op
+Result 13: 500 op, 61835985.00 ns, 123.6720 us/op
+Result 14: 500 op, 58360685.00 ns, 116.7214 us/op
+Result 15: 500 op, 58857885.00 ns, 117.7158 us/op
+Result 16: 500 op, 59566185.00 ns, 119.1324 us/op
+Result 17: 500 op, 59463885.00 ns, 118.9278 us/op
+Result 18: 500 op, 60225585.00 ns, 120.4512 us/op
+Result 19: 500 op, 58397385.00 ns, 116.7948 us/op
+GC:  0 0 0 272000 500
+
+// AfterAll
+
+Mean = 119.9133 us, StdErr = 0.6873 us (0.57%); N = 19, StdDev = 2.9959 us
+Min = 116.7214 us, Q1 = 117.7158 us, Median = 118.9278 us, Q3 = 122.1092 us, Max = 128.1188 us
+IQR = 4.3934 us, LowerFence = 111.1257 us, UpperFence = 128.6993 us
+ConfidenceInterval = [117.2179 us; 122.6087 us] (CI 99.9%), Margin = 2.6954 us (2.25% of Mean)
+Skewness = 1.14, Kurtosis = 3.59, MValue = 2
+
+// **************************
+// Benchmark: CopyFromStreamToStream.CopyToStreamFromManagerInsideUsing: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=2048]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-PJMDJE(InvocationCount=500, UnrollFactor=1)
+
+IdleWarmup  1: 500 op, 144000.00 ns, 288.0000 ns/op
+IdleWarmup  2: 500 op, 2700.00 ns, 5.4000 ns/op
+IdleWarmup  3: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleWarmup  4: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleWarmup  5: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleWarmup  6: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleWarmup  7: 500 op, 1100.00 ns, 2.2000 ns/op
+
+IdleTarget  1: 500 op, 1600.00 ns, 3.2000 ns/op
+IdleTarget  2: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  3: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget  4: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget  5: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  6: 500 op, 1000.00 ns, 2.0000 ns/op
+IdleTarget  7: 500 op, 1000.00 ns, 2.0000 ns/op
+IdleTarget  8: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget  9: 500 op, 1000.00 ns, 2.0000 ns/op
+IdleTarget 10: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget 11: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget 12: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget 13: 500 op, 1000.00 ns, 2.0000 ns/op
+IdleTarget 14: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget 15: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 16: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 17: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget 18: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 19: 500 op, 1600.00 ns, 3.2000 ns/op
+IdleTarget 20: 500 op, 1100.00 ns, 2.2000 ns/op
+
+MainWarmup  1: 500 op, 62571100.00 ns, 125.1422 us/op
+MainWarmup  2: 500 op, 61685000.00 ns, 123.3700 us/op
+MainWarmup  3: 500 op, 61328700.00 ns, 122.6574 us/op
+MainWarmup  4: 500 op, 62887900.00 ns, 125.7758 us/op
+MainWarmup  5: 500 op, 60939000.00 ns, 121.8780 us/op
+MainWarmup  6: 500 op, 60563000.00 ns, 121.1260 us/op
+MainWarmup  7: 500 op, 61125700.00 ns, 122.2514 us/op
+MainWarmup  8: 500 op, 62182800.00 ns, 124.3656 us/op
+MainWarmup  9: 500 op, 61824100.00 ns, 123.6482 us/op
+
+// BeforeMainRun
+MainTarget  1: 500 op, 60863300.00 ns, 121.7266 us/op
+MainTarget  2: 500 op, 60858200.00 ns, 121.7164 us/op
+MainTarget  3: 500 op, 62829100.00 ns, 125.6582 us/op
+MainTarget  4: 500 op, 60118700.00 ns, 120.2374 us/op
+MainTarget  5: 500 op, 61243000.00 ns, 122.4860 us/op
+MainTarget  6: 500 op, 62252800.00 ns, 124.5056 us/op
+MainTarget  7: 500 op, 61466400.00 ns, 122.9328 us/op
+MainTarget  8: 500 op, 61640100.00 ns, 123.2802 us/op
+MainTarget  9: 500 op, 59654800.00 ns, 119.3096 us/op
+MainTarget 10: 500 op, 59759600.00 ns, 119.5192 us/op
+MainTarget 11: 500 op, 60565900.00 ns, 121.1318 us/op
+MainTarget 12: 500 op, 59659300.00 ns, 119.3186 us/op
+MainTarget 13: 500 op, 60331000.00 ns, 120.6620 us/op
+MainTarget 14: 500 op, 60522600.00 ns, 121.0452 us/op
+MainTarget 15: 500 op, 60511500.00 ns, 121.0230 us/op
+
+// AfterMainRun
+Result  1: 500 op, 60862090.00 ns, 121.7242 us/op
+Result  2: 500 op, 60856990.00 ns, 121.7140 us/op
+Result  3: 500 op, 62827890.00 ns, 125.6558 us/op
+Result  4: 500 op, 60117490.00 ns, 120.2350 us/op
+Result  5: 500 op, 61241790.00 ns, 122.4836 us/op
+Result  6: 500 op, 62251590.00 ns, 124.5032 us/op
+Result  7: 500 op, 61465190.00 ns, 122.9304 us/op
+Result  8: 500 op, 61638890.00 ns, 123.2778 us/op
+Result  9: 500 op, 59653590.00 ns, 119.3072 us/op
+Result 10: 500 op, 59758390.00 ns, 119.5168 us/op
+Result 11: 500 op, 60564690.00 ns, 121.1294 us/op
+Result 12: 500 op, 59658090.00 ns, 119.3162 us/op
+Result 13: 500 op, 60329790.00 ns, 120.6596 us/op
+Result 14: 500 op, 60521390.00 ns, 121.0428 us/op
+Result 15: 500 op, 60510290.00 ns, 121.0206 us/op
+GC:  0 0 0 448000 500
+
+// AfterAll
+
+Mean = 121.6344 us, StdErr = 0.4815 us (0.40%); N = 15, StdDev = 1.8647 us
+Min = 119.3072 us, Q1 = 120.2350 us, Median = 121.1294 us, Q3 = 122.9304 us, Max = 125.6558 us
+IQR = 2.6954 us, LowerFence = 116.1919 us, UpperFence = 126.9735 us
+ConfidenceInterval = [119.6409 us; 123.6280 us] (CI 99.9%), Margin = 1.9935 us (1.64% of Mean)
+Skewness = 0.59, Kurtosis = 2.33, MValue = 2
+
+// **************************
+// Benchmark: CopyFromStreamToStream.ArraySegment: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=4096]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-EJSRCV(InvocationCount=500, UnrollFactor=1)
+
+IdleWarmup  1: 500 op, 156900.00 ns, 313.8000 ns/op
+IdleWarmup  2: 500 op, 2700.00 ns, 5.4000 ns/op
+IdleWarmup  3: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  4: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleWarmup  5: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleWarmup  6: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleWarmup  7: 500 op, 1200.00 ns, 2.4000 ns/op
+
+IdleTarget  1: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  2: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget  3: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  4: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget  5: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  6: 500 op, 1700.00 ns, 3.4000 ns/op
+IdleTarget  7: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget  8: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget  9: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 10: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget 11: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 12: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget 13: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget 14: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 15: 500 op, 2800.00 ns, 5.6000 ns/op
+IdleTarget 16: 500 op, 3300.00 ns, 6.6000 ns/op
+IdleTarget 17: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 18: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget 19: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 20: 500 op, 1200.00 ns, 2.4000 ns/op
+
+MainWarmup  1: 500 op, 10546500.00 ns, 21.0930 us/op
+MainWarmup  2: 500 op, 8398800.00 ns, 16.7976 us/op
+MainWarmup  3: 500 op, 8730800.00 ns, 17.4616 us/op
+MainWarmup  4: 500 op, 9793900.00 ns, 19.5878 us/op
+MainWarmup  5: 500 op, 8388100.00 ns, 16.7762 us/op
+MainWarmup  6: 500 op, 9394600.00 ns, 18.7892 us/op
+MainWarmup  7: 500 op, 8703700.00 ns, 17.4074 us/op
+
+// BeforeMainRun
+MainTarget  1: 500 op, 8281900.00 ns, 16.5638 us/op
+MainTarget  2: 500 op, 8010400.00 ns, 16.0208 us/op
+MainTarget  3: 500 op, 8405200.00 ns, 16.8104 us/op
+MainTarget  4: 500 op, 9215300.00 ns, 18.4306 us/op
+MainTarget  5: 500 op, 8254200.00 ns, 16.5084 us/op
+MainTarget  6: 500 op, 8847300.00 ns, 17.6946 us/op
+MainTarget  7: 500 op, 7884900.00 ns, 15.7698 us/op
+MainTarget  8: 500 op, 8357200.00 ns, 16.7144 us/op
+MainTarget  9: 500 op, 9315500.00 ns, 18.6310 us/op
+MainTarget 10: 500 op, 8583200.00 ns, 17.1664 us/op
+MainTarget 11: 500 op, 7932700.00 ns, 15.8654 us/op
+MainTarget 12: 500 op, 8140600.00 ns, 16.2812 us/op
+MainTarget 13: 500 op, 7936000.00 ns, 15.8720 us/op
+MainTarget 14: 500 op, 8268600.00 ns, 16.5372 us/op
+MainTarget 15: 500 op, 9490500.00 ns, 18.9810 us/op
+MainTarget 16: 500 op, 8115100.00 ns, 16.2302 us/op
+MainTarget 17: 500 op, 8494100.00 ns, 16.9882 us/op
+MainTarget 18: 500 op, 9332600.00 ns, 18.6652 us/op
+MainTarget 19: 500 op, 8119200.00 ns, 16.2384 us/op
+MainTarget 20: 500 op, 8550600.00 ns, 17.1012 us/op
+MainTarget 21: 500 op, 7827500.00 ns, 15.6550 us/op
+MainTarget 22: 500 op, 9354800.00 ns, 18.7096 us/op
+MainTarget 23: 500 op, 8649000.00 ns, 17.2980 us/op
+MainTarget 24: 500 op, 8560400.00 ns, 17.1208 us/op
+MainTarget 25: 500 op, 9231300.00 ns, 18.4626 us/op
+MainTarget 26: 500 op, 12717300.00 ns, 25.4346 us/op
+MainTarget 27: 500 op, 8189400.00 ns, 16.3788 us/op
+MainTarget 28: 500 op, 10352200.00 ns, 20.7044 us/op
+MainTarget 29: 500 op, 8290000.00 ns, 16.5800 us/op
+MainTarget 30: 500 op, 9041400.00 ns, 18.0828 us/op
+MainTarget 31: 500 op, 8001800.00 ns, 16.0036 us/op
+MainTarget 32: 500 op, 8826300.00 ns, 17.6526 us/op
+MainTarget 33: 500 op, 8113700.00 ns, 16.2274 us/op
+MainTarget 34: 500 op, 8186500.00 ns, 16.3730 us/op
+MainTarget 35: 500 op, 8799100.00 ns, 17.5982 us/op
+MainTarget 36: 500 op, 9293600.00 ns, 18.5872 us/op
+MainTarget 37: 500 op, 8364300.00 ns, 16.7286 us/op
+MainTarget 38: 500 op, 8699100.00 ns, 17.3982 us/op
+MainTarget 39: 500 op, 9583200.00 ns, 19.1664 us/op
+MainTarget 40: 500 op, 8795300.00 ns, 17.5906 us/op
+MainTarget 41: 500 op, 8539500.00 ns, 17.0790 us/op
+MainTarget 42: 500 op, 8573400.00 ns, 17.1468 us/op
+MainTarget 43: 500 op, 7994700.00 ns, 15.9894 us/op
+MainTarget 44: 500 op, 8522800.00 ns, 17.0456 us/op
+MainTarget 45: 500 op, 8077000.00 ns, 16.1540 us/op
+MainTarget 46: 500 op, 9202800.00 ns, 18.4056 us/op
+MainTarget 47: 500 op, 7805600.00 ns, 15.6112 us/op
+MainTarget 48: 500 op, 8468100.00 ns, 16.9362 us/op
+MainTarget 49: 500 op, 8457400.00 ns, 16.9148 us/op
+MainTarget 50: 500 op, 8079500.00 ns, 16.1590 us/op
+MainTarget 51: 500 op, 8380400.00 ns, 16.7608 us/op
+MainTarget 52: 500 op, 8873200.00 ns, 17.7464 us/op
+MainTarget 53: 500 op, 8241100.00 ns, 16.4822 us/op
+MainTarget 54: 500 op, 8278800.00 ns, 16.5576 us/op
+MainTarget 55: 500 op, 9604700.00 ns, 19.2094 us/op
+MainTarget 56: 500 op, 8269900.00 ns, 16.5398 us/op
+MainTarget 57: 500 op, 8571100.00 ns, 17.1422 us/op
+MainTarget 58: 500 op, 8465700.00 ns, 16.9314 us/op
+MainTarget 59: 500 op, 8678500.00 ns, 17.3570 us/op
+MainTarget 60: 500 op, 8675100.00 ns, 17.3502 us/op
+MainTarget 61: 500 op, 8166500.00 ns, 16.3330 us/op
+MainTarget 62: 500 op, 9269400.00 ns, 18.5388 us/op
+MainTarget 63: 500 op, 8115000.00 ns, 16.2300 us/op
+MainTarget 64: 500 op, 8394700.00 ns, 16.7894 us/op
+MainTarget 65: 500 op, 8627100.00 ns, 17.2542 us/op
+MainTarget 66: 500 op, 8027300.00 ns, 16.0546 us/op
+MainTarget 67: 500 op, 8169400.00 ns, 16.3388 us/op
+MainTarget 68: 500 op, 8701200.00 ns, 17.4024 us/op
+MainTarget 69: 500 op, 8423000.00 ns, 16.8460 us/op
+MainTarget 70: 500 op, 8032900.00 ns, 16.0658 us/op
+MainTarget 71: 500 op, 8796700.00 ns, 17.5934 us/op
+MainTarget 72: 500 op, 8142900.00 ns, 16.2858 us/op
+MainTarget 73: 500 op, 8175900.00 ns, 16.3518 us/op
+MainTarget 74: 500 op, 7735200.00 ns, 15.4704 us/op
+MainTarget 75: 500 op, 8216200.00 ns, 16.4324 us/op
+MainTarget 76: 500 op, 8141000.00 ns, 16.2820 us/op
+MainTarget 77: 500 op, 7969100.00 ns, 15.9382 us/op
+MainTarget 78: 500 op, 7894900.00 ns, 15.7898 us/op
+MainTarget 79: 500 op, 8342200.00 ns, 16.6844 us/op
+MainTarget 80: 500 op, 8031000.00 ns, 16.0620 us/op
+MainTarget 81: 500 op, 8361500.00 ns, 16.7230 us/op
+
+// AfterMainRun
+Result  1: 500 op, 8280505.00 ns, 16.5610 us/op
+Result  2: 500 op, 8009005.00 ns, 16.0180 us/op
+Result  3: 500 op, 8403805.00 ns, 16.8076 us/op
+Result  4: 500 op, 9213905.00 ns, 18.4278 us/op
+Result  5: 500 op, 8252805.00 ns, 16.5056 us/op
+Result  6: 500 op, 8845905.00 ns, 17.6918 us/op
+Result  7: 500 op, 7883505.00 ns, 15.7670 us/op
+Result  8: 500 op, 8355805.00 ns, 16.7116 us/op
+Result  9: 500 op, 9314105.00 ns, 18.6282 us/op
+Result 10: 500 op, 8581805.00 ns, 17.1636 us/op
+Result 11: 500 op, 7931305.00 ns, 15.8626 us/op
+Result 12: 500 op, 8139205.00 ns, 16.2784 us/op
+Result 13: 500 op, 7934605.00 ns, 15.8692 us/op
+Result 14: 500 op, 8267205.00 ns, 16.5344 us/op
+Result 15: 500 op, 9489105.00 ns, 18.9782 us/op
+Result 16: 500 op, 8113705.00 ns, 16.2274 us/op
+Result 17: 500 op, 8492705.00 ns, 16.9854 us/op
+Result 18: 500 op, 9331205.00 ns, 18.6624 us/op
+Result 19: 500 op, 8117805.00 ns, 16.2356 us/op
+Result 20: 500 op, 8549205.00 ns, 17.0984 us/op
+Result 21: 500 op, 7826105.00 ns, 15.6522 us/op
+Result 22: 500 op, 9353405.00 ns, 18.7068 us/op
+Result 23: 500 op, 8647605.00 ns, 17.2952 us/op
+Result 24: 500 op, 8559005.00 ns, 17.1180 us/op
+Result 25: 500 op, 9229905.00 ns, 18.4598 us/op
+Result 26: 500 op, 8188005.00 ns, 16.3760 us/op
+Result 27: 500 op, 8288605.00 ns, 16.5772 us/op
+Result 28: 500 op, 9040005.00 ns, 18.0800 us/op
+Result 29: 500 op, 8000405.00 ns, 16.0008 us/op
+Result 30: 500 op, 8824905.00 ns, 17.6498 us/op
+Result 31: 500 op, 8112305.00 ns, 16.2246 us/op
+Result 32: 500 op, 8185105.00 ns, 16.3702 us/op
+Result 33: 500 op, 8797705.00 ns, 17.5954 us/op
+Result 34: 500 op, 9292205.00 ns, 18.5844 us/op
+Result 35: 500 op, 8362905.00 ns, 16.7258 us/op
+Result 36: 500 op, 8697705.00 ns, 17.3954 us/op
+Result 37: 500 op, 9581805.00 ns, 19.1636 us/op
+Result 38: 500 op, 8793905.00 ns, 17.5878 us/op
+Result 39: 500 op, 8538105.00 ns, 17.0762 us/op
+Result 40: 500 op, 8572005.00 ns, 17.1440 us/op
+Result 41: 500 op, 7993305.00 ns, 15.9866 us/op
+Result 42: 500 op, 8521405.00 ns, 17.0428 us/op
+Result 43: 500 op, 8075605.00 ns, 16.1512 us/op
+Result 44: 500 op, 9201405.00 ns, 18.4028 us/op
+Result 45: 500 op, 7804205.00 ns, 15.6084 us/op
+Result 46: 500 op, 8466705.00 ns, 16.9334 us/op
+Result 47: 500 op, 8456005.00 ns, 16.9120 us/op
+Result 48: 500 op, 8078105.00 ns, 16.1562 us/op
+Result 49: 500 op, 8379005.00 ns, 16.7580 us/op
+Result 50: 500 op, 8871805.00 ns, 17.7436 us/op
+Result 51: 500 op, 8239705.00 ns, 16.4794 us/op
+Result 52: 500 op, 8277405.00 ns, 16.5548 us/op
+Result 53: 500 op, 9603305.00 ns, 19.2066 us/op
+Result 54: 500 op, 8268505.00 ns, 16.5370 us/op
+Result 55: 500 op, 8569705.00 ns, 17.1394 us/op
+Result 56: 500 op, 8464305.00 ns, 16.9286 us/op
+Result 57: 500 op, 8677105.00 ns, 17.3542 us/op
+Result 58: 500 op, 8673705.00 ns, 17.3474 us/op
+Result 59: 500 op, 8165105.00 ns, 16.3302 us/op
+Result 60: 500 op, 9268005.00 ns, 18.5360 us/op
+Result 61: 500 op, 8113605.00 ns, 16.2272 us/op
+Result 62: 500 op, 8393305.00 ns, 16.7866 us/op
+Result 63: 500 op, 8625705.00 ns, 17.2514 us/op
+Result 64: 500 op, 8025905.00 ns, 16.0518 us/op
+Result 65: 500 op, 8168005.00 ns, 16.3360 us/op
+Result 66: 500 op, 8699805.00 ns, 17.3996 us/op
+Result 67: 500 op, 8421605.00 ns, 16.8432 us/op
+Result 68: 500 op, 8031505.00 ns, 16.0630 us/op
+Result 69: 500 op, 8795305.00 ns, 17.5906 us/op
+Result 70: 500 op, 8141505.00 ns, 16.2830 us/op
+Result 71: 500 op, 8174505.00 ns, 16.3490 us/op
+Result 72: 500 op, 7733805.00 ns, 15.4676 us/op
+Result 73: 500 op, 8214805.00 ns, 16.4296 us/op
+Result 74: 500 op, 8139605.00 ns, 16.2792 us/op
+Result 75: 500 op, 7967705.00 ns, 15.9354 us/op
+Result 76: 500 op, 7893505.00 ns, 15.7870 us/op
+Result 77: 500 op, 8340805.00 ns, 16.6816 us/op
+Result 78: 500 op, 8029605.00 ns, 16.0592 us/op
+Result 79: 500 op, 8360105.00 ns, 16.7202 us/op
+GC:  0 0 0 2132000 500
+
+// AfterAll
+
+Mean = 16.9297 us, StdErr = 0.1028 us (0.61%); N = 79, StdDev = 0.9140 us
+Min = 15.4676 us, Q1 = 16.2356 us, Median = 16.7258 us, Q3 = 17.3954 us, Max = 19.2066 us
+IQR = 1.1598 us, LowerFence = 14.4959 us, UpperFence = 19.1351 us
+ConfidenceInterval = [16.5780 us; 17.2814 us] (CI 99.9%), Margin = 0.3517 us (2.08% of Mean)
+Skewness = 0.78, Kurtosis = 2.79, MValue = 2.74
+
+// **************************
+// Benchmark: CopyFromStreamToStream.CopyToStream: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=4096]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-DJDXNX(InvocationCount=500, UnrollFactor=1)
+
+IdleWarmup  1: 500 op, 158700.00 ns, 317.4000 ns/op
+IdleWarmup  2: 500 op, 2600.00 ns, 5.2000 ns/op
+IdleWarmup  3: 500 op, 1000.00 ns, 2.0000 ns/op
+IdleWarmup  4: 500 op, 1000.00 ns, 2.0000 ns/op
+IdleWarmup  5: 500 op, 1000.00 ns, 2.0000 ns/op
+IdleWarmup  6: 500 op, 1000.00 ns, 2.0000 ns/op
+IdleWarmup  7: 500 op, 1000.00 ns, 2.0000 ns/op
+
+IdleTarget  1: 500 op, 1000.00 ns, 2.0000 ns/op
+IdleTarget  2: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget  3: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget  4: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget  5: 500 op, 1000.00 ns, 2.0000 ns/op
+IdleTarget  6: 500 op, 1000.00 ns, 2.0000 ns/op
+IdleTarget  7: 500 op, 1000.00 ns, 2.0000 ns/op
+IdleTarget  8: 500 op, 1600.00 ns, 3.2000 ns/op
+IdleTarget  9: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 10: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 11: 500 op, 1500.00 ns, 3.0000 ns/op
+IdleTarget 12: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 13: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget 14: 500 op, 1000.00 ns, 2.0000 ns/op
+IdleTarget 15: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget 16: 500 op, 1000.00 ns, 2.0000 ns/op
+IdleTarget 17: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget 18: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 19: 500 op, 1000.00 ns, 2.0000 ns/op
+IdleTarget 20: 500 op, 1000.00 ns, 2.0000 ns/op
+
+MainWarmup  1: 500 op, 9795600.00 ns, 19.5912 us/op
+MainWarmup  2: 500 op, 8233800.00 ns, 16.4676 us/op
+MainWarmup  3: 500 op, 9270900.00 ns, 18.5418 us/op
+MainWarmup  4: 500 op, 8040200.00 ns, 16.0804 us/op
+MainWarmup  5: 500 op, 10238500.00 ns, 20.4770 us/op
+MainWarmup  6: 500 op, 8137800.00 ns, 16.2756 us/op
+
+// BeforeMainRun
+MainTarget  1: 500 op, 8342800.00 ns, 16.6856 us/op
+MainTarget  2: 500 op, 9080700.00 ns, 18.1614 us/op
+MainTarget  3: 500 op, 8651700.00 ns, 17.3034 us/op
+MainTarget  4: 500 op, 8493800.00 ns, 16.9876 us/op
+MainTarget  5: 500 op, 7882500.00 ns, 15.7650 us/op
+MainTarget  6: 500 op, 9251400.00 ns, 18.5028 us/op
+MainTarget  7: 500 op, 8450000.00 ns, 16.9000 us/op
+MainTarget  8: 500 op, 8394400.00 ns, 16.7888 us/op
+MainTarget  9: 500 op, 8136100.00 ns, 16.2722 us/op
+MainTarget 10: 500 op, 8650900.00 ns, 17.3018 us/op
+MainTarget 11: 500 op, 9065800.00 ns, 18.1316 us/op
+MainTarget 12: 500 op, 9111500.00 ns, 18.2230 us/op
+MainTarget 13: 500 op, 8619700.00 ns, 17.2394 us/op
+MainTarget 14: 500 op, 8096900.00 ns, 16.1938 us/op
+MainTarget 15: 500 op, 8779000.00 ns, 17.5580 us/op
+MainTarget 16: 500 op, 8714800.00 ns, 17.4296 us/op
+MainTarget 17: 500 op, 8666600.00 ns, 17.3332 us/op
+MainTarget 18: 500 op, 8348800.00 ns, 16.6976 us/op
+MainTarget 19: 500 op, 8612600.00 ns, 17.2252 us/op
+MainTarget 20: 500 op, 9592600.00 ns, 19.1852 us/op
+MainTarget 21: 500 op, 8121900.00 ns, 16.2438 us/op
+MainTarget 22: 500 op, 8451200.00 ns, 16.9024 us/op
+MainTarget 23: 500 op, 8718800.00 ns, 17.4376 us/op
+MainTarget 24: 500 op, 13175300.00 ns, 26.3506 us/op
+MainTarget 25: 500 op, 8255200.00 ns, 16.5104 us/op
+MainTarget 26: 500 op, 8261800.00 ns, 16.5236 us/op
+MainTarget 27: 500 op, 8277800.00 ns, 16.5556 us/op
+MainTarget 28: 500 op, 9003600.00 ns, 18.0072 us/op
+MainTarget 29: 500 op, 8931800.00 ns, 17.8636 us/op
+MainTarget 30: 500 op, 8531400.00 ns, 17.0628 us/op
+MainTarget 31: 500 op, 8372400.00 ns, 16.7448 us/op
+MainTarget 32: 500 op, 8830400.00 ns, 17.6608 us/op
+MainTarget 33: 500 op, 9565000.00 ns, 19.1300 us/op
+MainTarget 34: 500 op, 9849400.00 ns, 19.6988 us/op
+MainTarget 35: 500 op, 8538900.00 ns, 17.0778 us/op
+MainTarget 36: 500 op, 9065800.00 ns, 18.1316 us/op
+MainTarget 37: 500 op, 10736000.00 ns, 21.4720 us/op
+MainTarget 38: 500 op, 8463000.00 ns, 16.9260 us/op
+MainTarget 39: 500 op, 8455800.00 ns, 16.9116 us/op
+MainTarget 40: 500 op, 8340700.00 ns, 16.6814 us/op
+MainTarget 41: 500 op, 8856800.00 ns, 17.7136 us/op
+MainTarget 42: 500 op, 8943100.00 ns, 17.8862 us/op
+MainTarget 43: 500 op, 8269700.00 ns, 16.5394 us/op
+MainTarget 44: 500 op, 8756000.00 ns, 17.5120 us/op
+MainTarget 45: 500 op, 9101900.00 ns, 18.2038 us/op
+MainTarget 46: 500 op, 9111000.00 ns, 18.2220 us/op
+MainTarget 47: 500 op, 8733600.00 ns, 17.4672 us/op
+MainTarget 48: 500 op, 8488300.00 ns, 16.9766 us/op
+MainTarget 49: 500 op, 9292300.00 ns, 18.5846 us/op
+MainTarget 50: 500 op, 8422000.00 ns, 16.8440 us/op
+MainTarget 51: 500 op, 8872000.00 ns, 17.7440 us/op
+MainTarget 52: 500 op, 8778800.00 ns, 17.5576 us/op
+MainTarget 53: 500 op, 8513500.00 ns, 17.0270 us/op
+MainTarget 54: 500 op, 8959200.00 ns, 17.9184 us/op
+MainTarget 55: 500 op, 8535600.00 ns, 17.0712 us/op
+MainTarget 56: 500 op, 8884800.00 ns, 17.7696 us/op
+MainTarget 57: 500 op, 8845100.00 ns, 17.6902 us/op
+
+// AfterMainRun
+Result  1: 500 op, 8341650.00 ns, 16.6833 us/op
+Result  2: 500 op, 9079550.00 ns, 18.1591 us/op
+Result  3: 500 op, 8650550.00 ns, 17.3011 us/op
+Result  4: 500 op, 8492650.00 ns, 16.9853 us/op
+Result  5: 500 op, 7881350.00 ns, 15.7627 us/op
+Result  6: 500 op, 9250250.00 ns, 18.5005 us/op
+Result  7: 500 op, 8448850.00 ns, 16.8977 us/op
+Result  8: 500 op, 8393250.00 ns, 16.7865 us/op
+Result  9: 500 op, 8134950.00 ns, 16.2699 us/op
+Result 10: 500 op, 8649750.00 ns, 17.2995 us/op
+Result 11: 500 op, 9064650.00 ns, 18.1293 us/op
+Result 12: 500 op, 9110350.00 ns, 18.2207 us/op
+Result 13: 500 op, 8618550.00 ns, 17.2371 us/op
+Result 14: 500 op, 8095750.00 ns, 16.1915 us/op
+Result 15: 500 op, 8777850.00 ns, 17.5557 us/op
+Result 16: 500 op, 8713650.00 ns, 17.4273 us/op
+Result 17: 500 op, 8665450.00 ns, 17.3309 us/op
+Result 18: 500 op, 8347650.00 ns, 16.6953 us/op
+Result 19: 500 op, 8611450.00 ns, 17.2229 us/op
+Result 20: 500 op, 9591450.00 ns, 19.1829 us/op
+Result 21: 500 op, 8120750.00 ns, 16.2415 us/op
+Result 22: 500 op, 8450050.00 ns, 16.9001 us/op
+Result 23: 500 op, 8717650.00 ns, 17.4353 us/op
+Result 24: 500 op, 8254050.00 ns, 16.5081 us/op
+Result 25: 500 op, 8260650.00 ns, 16.5213 us/op
+Result 26: 500 op, 8276650.00 ns, 16.5533 us/op
+Result 27: 500 op, 9002450.00 ns, 18.0049 us/op
+Result 28: 500 op, 8930650.00 ns, 17.8613 us/op
+Result 29: 500 op, 8530250.00 ns, 17.0605 us/op
+Result 30: 500 op, 8371250.00 ns, 16.7425 us/op
+Result 31: 500 op, 8829250.00 ns, 17.6585 us/op
+Result 32: 500 op, 9563850.00 ns, 19.1277 us/op
+Result 33: 500 op, 8537750.00 ns, 17.0755 us/op
+Result 34: 500 op, 9064650.00 ns, 18.1293 us/op
+Result 35: 500 op, 8461850.00 ns, 16.9237 us/op
+Result 36: 500 op, 8454650.00 ns, 16.9093 us/op
+Result 37: 500 op, 8339550.00 ns, 16.6791 us/op
+Result 38: 500 op, 8855650.00 ns, 17.7113 us/op
+Result 39: 500 op, 8941950.00 ns, 17.8839 us/op
+Result 40: 500 op, 8268550.00 ns, 16.5371 us/op
+Result 41: 500 op, 8754850.00 ns, 17.5097 us/op
+Result 42: 500 op, 9100750.00 ns, 18.2015 us/op
+Result 43: 500 op, 9109850.00 ns, 18.2197 us/op
+Result 44: 500 op, 8732450.00 ns, 17.4649 us/op
+Result 45: 500 op, 8487150.00 ns, 16.9743 us/op
+Result 46: 500 op, 9291150.00 ns, 18.5823 us/op
+Result 47: 500 op, 8420850.00 ns, 16.8417 us/op
+Result 48: 500 op, 8870850.00 ns, 17.7417 us/op
+Result 49: 500 op, 8777650.00 ns, 17.5553 us/op
+Result 50: 500 op, 8512350.00 ns, 17.0247 us/op
+Result 51: 500 op, 8958050.00 ns, 17.9161 us/op
+Result 52: 500 op, 8534450.00 ns, 17.0689 us/op
+Result 53: 500 op, 8883650.00 ns, 17.7673 us/op
+Result 54: 500 op, 8843950.00 ns, 17.6879 us/op
+GC:  1 0 0 4192000 500
+
+// AfterAll
+
+Mean = 17.3492 us, StdErr = 0.0993 us (0.57%); N = 54, StdDev = 0.7297 us
+Min = 15.7627 us, Q1 = 16.8417 us, Median = 17.3003 us, Q3 = 17.8613 us, Max = 19.1829 us
+IQR = 1.0196 us, LowerFence = 15.3123 us, UpperFence = 19.3907 us
+ConfidenceInterval = [17.0033 us; 17.6952 us] (CI 99.9%), Margin = 0.3459 us (1.99% of Mean)
+Skewness = 0.35, Kurtosis = 2.79, MValue = 2.3
+
+// **************************
+// Benchmark: CopyFromStreamToStream.CopyToStreamFromManager: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=4096]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-XUWTIN(InvocationCount=500, UnrollFactor=1)
+
+IdleWarmup  1: 500 op, 169200.00 ns, 338.4000 ns/op
+IdleWarmup  2: 500 op, 2600.00 ns, 5.2000 ns/op
+IdleWarmup  3: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  4: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  5: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  6: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleWarmup  7: 500 op, 1200.00 ns, 2.4000 ns/op
+
+IdleTarget  1: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget  2: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  3: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  4: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget  5: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget  6: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  7: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget  8: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget  9: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 10: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 11: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 12: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 13: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 14: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget 15: 500 op, 3600.00 ns, 7.2000 ns/op
+IdleTarget 16: 500 op, 2900.00 ns, 5.8000 ns/op
+IdleTarget 17: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 18: 500 op, 1400.00 ns, 2.8000 ns/op
+IdleTarget 19: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget 20: 500 op, 1300.00 ns, 2.6000 ns/op
+
+MainWarmup  1: 500 op, 126097700.00 ns, 252.1954 us/op
+MainWarmup  2: 500 op, 118502100.00 ns, 237.0042 us/op
+MainWarmup  3: 500 op, 117349000.00 ns, 234.6980 us/op
+MainWarmup  4: 500 op, 116721400.00 ns, 233.4428 us/op
+MainWarmup  5: 500 op, 116162100.00 ns, 232.3242 us/op
+MainWarmup  6: 500 op, 129022300.00 ns, 258.0446 us/op
+MainWarmup  7: 500 op, 121645600.00 ns, 243.2912 us/op
+MainWarmup  8: 500 op, 118183700.00 ns, 236.3674 us/op
+MainWarmup  9: 500 op, 117091200.00 ns, 234.1824 us/op
+MainWarmup 10: 500 op, 116047200.00 ns, 232.0944 us/op
+MainWarmup 11: 500 op, 117102300.00 ns, 234.2046 us/op
+MainWarmup 12: 500 op, 117858300.00 ns, 235.7166 us/op
+MainWarmup 13: 500 op, 115331200.00 ns, 230.6624 us/op
+
+// BeforeMainRun
+MainTarget  1: 500 op, 116375900.00 ns, 232.7518 us/op
+MainTarget  2: 500 op, 116714200.00 ns, 233.4284 us/op
+MainTarget  3: 500 op, 116703900.00 ns, 233.4078 us/op
+MainTarget  4: 500 op, 116798800.00 ns, 233.5976 us/op
+MainTarget  5: 500 op, 116999200.00 ns, 233.9984 us/op
+MainTarget  6: 500 op, 118141200.00 ns, 236.2824 us/op
+MainTarget  7: 500 op, 121451700.00 ns, 242.9034 us/op
+MainTarget  8: 500 op, 117461500.00 ns, 234.9230 us/op
+MainTarget  9: 500 op, 117153400.00 ns, 234.3068 us/op
+MainTarget 10: 500 op, 116106700.00 ns, 232.2134 us/op
+MainTarget 11: 500 op, 120884400.00 ns, 241.7688 us/op
+MainTarget 12: 500 op, 117420500.00 ns, 234.8410 us/op
+MainTarget 13: 500 op, 116292500.00 ns, 232.5850 us/op
+MainTarget 14: 500 op, 114933400.00 ns, 229.8668 us/op
+MainTarget 15: 500 op, 116475100.00 ns, 232.9502 us/op
+
+// AfterMainRun
+Result  1: 500 op, 116374420.00 ns, 232.7488 us/op
+Result  2: 500 op, 116712720.00 ns, 233.4254 us/op
+Result  3: 500 op, 116702420.00 ns, 233.4048 us/op
+Result  4: 500 op, 116797320.00 ns, 233.5946 us/op
+Result  5: 500 op, 116997720.00 ns, 233.9954 us/op
+Result  6: 500 op, 118139720.00 ns, 236.2794 us/op
+Result  7: 500 op, 117460020.00 ns, 234.9200 us/op
+Result  8: 500 op, 117151920.00 ns, 234.3038 us/op
+Result  9: 500 op, 116105220.00 ns, 232.2104 us/op
+Result 10: 500 op, 117419020.00 ns, 234.8380 us/op
+Result 11: 500 op, 116291020.00 ns, 232.5820 us/op
+Result 12: 500 op, 114931920.00 ns, 229.8638 us/op
+Result 13: 500 op, 116473620.00 ns, 232.9472 us/op
+GC:  0 0 0 272000 500
+
+// AfterAll
+
+Mean = 233.4703 us, StdErr = 0.4314 us (0.18%); N = 13, StdDev = 1.5554 us
+Min = 229.8638 us, Q1 = 232.6654 us, Median = 233.4254 us, Q3 = 234.5709 us, Max = 236.2794 us
+IQR = 1.9055 us, LowerFence = 229.8072 us, UpperFence = 237.4292 us
+ConfidenceInterval = [231.6076 us; 235.3330 us] (CI 99.9%), Margin = 1.8627 us (0.80% of Mean)
+Skewness = -0.44, Kurtosis = 3.2, MValue = 2
+
+// **************************
+// Benchmark: CopyFromStreamToStream.CopyToStreamFromManagerInsideUsing: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=4096]
+// *** Execute ***
+// Launch: 1 / 1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-VEYVBN(InvocationCount=500, UnrollFactor=1)
+
+IdleWarmup  1: 500 op, 165000.00 ns, 330.0000 ns/op
+IdleWarmup  2: 500 op, 2600.00 ns, 5.2000 ns/op
+IdleWarmup  3: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleWarmup  4: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleWarmup  5: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleWarmup  6: 500 op, 1000.00 ns, 2.0000 ns/op
+IdleWarmup  7: 500 op, 1100.00 ns, 2.2000 ns/op
+
+IdleTarget  1: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget  2: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget  3: 500 op, 1200.00 ns, 2.4000 ns/op
+IdleTarget  4: 500 op, 3600.00 ns, 7.2000 ns/op
+IdleTarget  5: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  6: 500 op, 1300.00 ns, 2.6000 ns/op
+IdleTarget  7: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget  8: 500 op, 1000.00 ns, 2.0000 ns/op
+IdleTarget  9: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget 10: 500 op, 1000.00 ns, 2.0000 ns/op
+IdleTarget 11: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget 12: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget 13: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget 14: 500 op, 1100.00 ns, 2.2000 ns/op
+IdleTarget 15: 500 op, 1100.00 ns, 2.2000 ns/op
+
+MainWarmup  1: 500 op, 124687900.00 ns, 249.3758 us/op
+MainWarmup  2: 500 op, 118701200.00 ns, 237.4024 us/op
+MainWarmup  3: 500 op, 119295700.00 ns, 238.5914 us/op
+MainWarmup  4: 500 op, 118447100.00 ns, 236.8942 us/op
+MainWarmup  5: 500 op, 120153500.00 ns, 240.3070 us/op
+MainWarmup  6: 500 op, 121200800.00 ns, 242.4016 us/op
+MainWarmup  7: 500 op, 119272800.00 ns, 238.5456 us/op
+
+// BeforeMainRun
+MainTarget  1: 500 op, 119461200.00 ns, 238.9224 us/op
+MainTarget  2: 500 op, 119348000.00 ns, 238.6960 us/op
+MainTarget  3: 500 op, 120097700.00 ns, 240.1954 us/op
+MainTarget  4: 500 op, 125167300.00 ns, 250.3346 us/op
+MainTarget  5: 500 op, 116250800.00 ns, 232.5016 us/op
+MainTarget  6: 500 op, 114882300.00 ns, 229.7646 us/op
+MainTarget  7: 500 op, 114821300.00 ns, 229.6426 us/op
+MainTarget  8: 500 op, 115923200.00 ns, 231.8464 us/op
+MainTarget  9: 500 op, 114896400.00 ns, 229.7928 us/op
+MainTarget 10: 500 op, 114421100.00 ns, 228.8422 us/op
+MainTarget 11: 500 op, 115331400.00 ns, 230.6628 us/op
+MainTarget 12: 500 op, 114730200.00 ns, 229.4604 us/op
+MainTarget 13: 500 op, 114318100.00 ns, 228.6362 us/op
+MainTarget 14: 500 op, 115372400.00 ns, 230.7448 us/op
+MainTarget 15: 500 op, 114516900.00 ns, 229.0338 us/op
+
+// AfterMainRun
+Result  1: 500 op, 119459913.33 ns, 238.9198 us/op
+Result  2: 500 op, 119346713.33 ns, 238.6934 us/op
+Result  3: 500 op, 120096413.33 ns, 240.1928 us/op
+Result  4: 500 op, 125166013.33 ns, 250.3320 us/op
+Result  5: 500 op, 116249513.33 ns, 232.4990 us/op
+Result  6: 500 op, 114881013.33 ns, 229.7620 us/op
+Result  7: 500 op, 114820013.33 ns, 229.6400 us/op
+Result  8: 500 op, 115921913.33 ns, 231.8438 us/op
+Result  9: 500 op, 114895113.33 ns, 229.7902 us/op
+Result 10: 500 op, 114419813.33 ns, 228.8396 us/op
+Result 11: 500 op, 115330113.33 ns, 230.6602 us/op
+Result 12: 500 op, 114728913.33 ns, 229.4578 us/op
+Result 13: 500 op, 114316813.33 ns, 228.6336 us/op
+Result 14: 500 op, 115371113.33 ns, 230.7422 us/op
+Result 15: 500 op, 114515613.33 ns, 229.0312 us/op
+GC:  0 0 0 448000 500
+
+// AfterAll
+
+Mean = 233.2692 us, StdErr = 1.5848 us (0.68%); N = 15, StdDev = 6.1378 us
+Min = 228.6336 us, Q1 = 229.4578 us, Median = 230.6602 us, Q3 = 238.6934 us, Max = 250.3320 us
+IQR = 9.2356 us, LowerFence = 215.6044 us, UpperFence = 252.5468 us
+ConfidenceInterval = [226.7075 us; 239.8309 us] (CI 99.9%), Margin = 6.5617 us (2.81% of Mean)
+Skewness = 1.49, Kurtosis = 4.27, MValue = 2
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+
+// * Detailed results *
+CopyFromStreamToStream.ArraySegment: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=100]
+Runtime = .NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 653.8521 ns, StdErr = 19.6691 ns (3.01%); N = 96, StdDev = 192.7173 ns
+Min = 498.9000 ns, Q1 = 507.0000 ns, Median = 553.1000 ns, Q3 = 797.7000 ns, Max = 1,305.7000 ns
+IQR = 290.7000 ns, LowerFence = 70.9500 ns, UpperFence = 1,233.7500 ns
+ConfidenceInterval = [587.0576 ns; 720.6465 ns] (CI 99.9%), Margin = 66.7945 ns (10.22% of Mean)
+Skewness = 1.17, Kurtosis = 3.29, MValue = 2.62
+-------------------- Histogram --------------------
+[ 497.373 ns ;  571.027 ns) | @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[ 571.027 ns ;  661.927 ns) | @@@@@@@@@@@@
+[ 661.927 ns ;  737.273 ns) | @@@
+[ 737.273 ns ;  810.927 ns) | @@@@@@
+[ 810.927 ns ;  885.273 ns) | @@
+[ 885.273 ns ;  994.673 ns) | @@@@@@@@@@@@@
+[ 994.673 ns ; 1068.327 ns) | @@@@@
+[1068.327 ns ; 1173.727 ns) | @
+[1173.727 ns ; 1268.873 ns) | 
+[1268.873 ns ; 1342.528 ns) | @
+---------------------------------------------------
+
+CopyFromStreamToStream.CopyToStream: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=100]
+Runtime = .NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 515.5150 ns, StdErr = 3.1079 ns (0.60%); N = 13, StdDev = 11.2056 ns
+Min = 504.6842 ns, Q1 = 508.2842 ns, Median = 513.2842 ns, Q3 = 515.1842 ns, Max = 546.2842 ns
+IQR = 6.9000 ns, LowerFence = 497.9342 ns, UpperFence = 525.5342 ns
+ConfidenceInterval = [502.0958 ns; 528.9342 ns] (CI 99.9%), Margin = 13.4192 ns (2.60% of Mean)
+Skewness = 1.64, Kurtosis = 4.77, MValue = 2
+-------------------- Histogram --------------------
+[500.514 ns ; 515.892 ns) | @@@@@@@@@@
+[515.892 ns ; 536.193 ns) | @
+[536.193 ns ; 550.454 ns) | @
+---------------------------------------------------
+
+CopyFromStreamToStream.CopyToStreamFromManager: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=100]
+Runtime = .NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 8.1225 us, StdErr = 0.0975 us (1.20%); N = 99, StdDev = 0.9704 us
+Min = 6.9961 us, Q1 = 7.4003 us, Median = 7.6941 us, Q3 = 8.8157 us, Max = 10.9847 us
+IQR = 1.4154 us, LowerFence = 5.2772 us, UpperFence = 10.9388 us
+ConfidenceInterval = [7.7916 us; 8.4534 us] (CI 99.9%), Margin = 0.3309 us (4.07% of Mean)
+Skewness = 1.09, Kurtosis = 3.06, MValue = 2.7
+-------------------- Histogram --------------------
+[ 6.813 us ;  7.198 us) | @@@
+[ 7.198 us ;  7.671 us) | @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[ 7.671 us ;  8.038 us) | @@@@@@@@@@@@@@@
+[ 8.038 us ;  8.490 us) | @@@@@@@@@@
+[ 8.490 us ;  8.854 us) | @@@
+[ 8.854 us ;  9.297 us) | @@@@@@@@
+[ 9.297 us ;  9.664 us) | @@@@@@@
+[ 9.664 us ; 10.214 us) | @@@@@
+[10.214 us ; 10.607 us) | @@@
+[10.607 us ; 11.168 us) | @
+---------------------------------------------------
+
+CopyFromStreamToStream.CopyToStreamFromManagerInsideUsing: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=100]
+Runtime = .NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 11.3689 us, StdErr = 0.0663 us (0.58%); N = 74, StdDev = 0.5701 us
+Min = 10.3693 us, Q1 = 10.9389 us, Median = 11.3021 us, Q3 = 11.7187 us, Max = 12.9029 us
+IQR = 0.7798 us, LowerFence = 9.7692 us, UpperFence = 12.8884 us
+ConfidenceInterval = [11.1417 us; 11.5962 us] (CI 99.9%), Margin = 0.2272 us (2.00% of Mean)
+Skewness = 0.68, Kurtosis = 2.88, MValue = 2
+-------------------- Histogram --------------------
+[10.360 us ; 10.598 us) | @@@@@
+[10.598 us ; 10.843 us) | @@@@@@@@
+[10.843 us ; 11.207 us) | @@@@@@@@@@@@@@@@@@@@
+[11.207 us ; 11.444 us) | @@@@@@@@@@@@@
+[11.444 us ; 11.774 us) | @@@@@@@@@@@@@
+[11.774 us ; 12.171 us) | @@@@@@@@@
+[12.171 us ; 12.663 us) | @@@@
+[12.663 us ; 12.936 us) | @@
+---------------------------------------------------
+
+CopyFromStreamToStream.ArraySegment: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=512]
+Runtime = .NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 2.4408 us, StdErr = 0.0155 us (0.63%); N = 46, StdDev = 0.1050 us
+Min = 2.3424 us, Q1 = 2.3742 us, Median = 2.4006 us, Q3 = 2.4688 us, Max = 2.8402 us
+IQR = 0.0946 us, LowerFence = 2.2323 us, UpperFence = 2.6107 us
+ConfidenceInterval = [2.3863 us; 2.4953 us] (CI 99.9%), Margin = 0.0545 us (2.23% of Mean)
+Skewness = 1.81, Kurtosis = 6.2, MValue = 2
+-------------------- Histogram --------------------
+[2.317 us ; 2.407 us) | @@@@@@@@@@@@@@@@@@@@@@@
+[2.407 us ; 2.467 us) | @@@@@@@@
+[2.467 us ; 2.518 us) | @@@@
+[2.518 us ; 2.579 us) | @@@@
+[2.579 us ; 2.639 us) | 
+[2.639 us ; 2.743 us) | @@@
+[2.743 us ; 2.866 us) | @
+---------------------------------------------------
+
+CopyFromStreamToStream.CopyToStream: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=512]
+Runtime = .NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 2.4250 us, StdErr = 0.0134 us (0.55%); N = 41, StdDev = 0.0857 us
+Min = 2.3031 us, Q1 = 2.3665 us, Median = 2.4159 us, Q3 = 2.4547 us, Max = 2.7027 us
+IQR = 0.0882 us, LowerFence = 2.2342 us, UpperFence = 2.5870 us
+ConfidenceInterval = [2.3774 us; 2.4725 us] (CI 99.9%), Margin = 0.0475 us (1.96% of Mean)
+Skewness = 1.13, Kurtosis = 4.39, MValue = 2
+-------------------- Histogram --------------------
+[2.296 us ; 2.351 us) | @@@@@@
+[2.351 us ; 2.412 us) | @@@@@@@@@@@@@@
+[2.412 us ; 2.483 us) | @@@@@@@@@@@@
+[2.483 us ; 2.562 us) | @@@@@@
+[2.562 us ; 2.638 us) | @@
+[2.638 us ; 2.724 us) | @
+---------------------------------------------------
+
+CopyFromStreamToStream.CopyToStreamFromManager: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=512]
+Runtime = .NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 33.1044 us, StdErr = 0.1800 us (0.54%); N = 33, StdDev = 1.0340 us
+Min = 31.5921 us, Q1 = 32.2118 us, Median = 32.8693 us, Q3 = 34.0296 us, Max = 35.4661 us
+IQR = 1.8178 us, LowerFence = 29.4851 us, UpperFence = 36.7563 us
+ConfidenceInterval = [32.4525 us; 33.7564 us] (CI 99.9%), Margin = 0.6519 us (1.97% of Mean)
+Skewness = 0.43, Kurtosis = 2.13, MValue = 2
+-------------------- Histogram --------------------
+[31.540 us ; 32.481 us) | @@@@@@@@@@@
+[32.481 us ; 33.281 us) | @@@@@@@@@@
+[33.281 us ; 34.554 us) | @@@@@@@@@@
+[34.554 us ; 35.626 us) | @@
+---------------------------------------------------
+
+CopyFromStreamToStream.CopyToStreamFromManagerInsideUsing: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=512]
+Runtime = .NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 39.5242 us, StdErr = 0.2279 us (0.58%); N = 70, StdDev = 1.9071 us
+Min = 37.0133 us, Q1 = 38.2399 us, Median = 38.8686 us, Q3 = 40.1783 us, Max = 45.7787 us
+IQR = 1.9384 us, LowerFence = 35.3323 us, UpperFence = 43.0859 us
+ConfidenceInterval = [38.7407 us; 40.3077 us] (CI 99.9%), Margin = 0.7835 us (1.98% of Mean)
+Skewness = 1.31, Kurtosis = 4.52, MValue = 2.64
+-------------------- Histogram --------------------
+[36.969 us ; 37.779 us) | @@@@@@@@@
+[37.779 us ; 38.836 us) | @@@@@@@@@@@@@@@@@@@@@@@@@
+[38.836 us ; 40.365 us) | @@@@@@@@@@@@@@@@@@@
+[40.365 us ; 41.236 us) | @@@
+[41.236 us ; 42.236 us) | @@@@@@@@
+[42.236 us ; 43.153 us) | @@@
+[43.153 us ; 44.215 us) | @
+[44.215 us ; 46.184 us) | @@
+---------------------------------------------------
+
+CopyFromStreamToStream.ArraySegment: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=2048]
+Runtime = .NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 9.5875 us, StdErr = 0.0493 us (0.51%); N = 20, StdDev = 0.2206 us
+Min = 9.2647 us, Q1 = 9.4169 us, Median = 9.5442 us, Q3 = 9.7476 us, Max = 10.0913 us
+IQR = 0.3307 us, LowerFence = 8.9208 us, UpperFence = 10.2436 us
+ConfidenceInterval = [9.3960 us; 9.7790 us] (CI 99.9%), Margin = 0.1915 us (2.00% of Mean)
+Skewness = 0.49, Kurtosis = 2.34, MValue = 2
+-------------------- Histogram --------------------
+[9.208 us ;  9.576 us) | @@@@@@@@@@@@
+[9.576 us ;  9.947 us) | @@@@@@@
+[9.947 us ; 10.162 us) | @
+---------------------------------------------------
+
+CopyFromStreamToStream.CopyToStream: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=2048]
+Runtime = .NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 11.1971 us, StdErr = 0.1853 us (1.66%); N = 89, StdDev = 1.7484 us
+Min = 9.3942 us, Q1 = 9.9746 us, Median = 10.4328 us, Q3 = 11.8957 us, Max = 17.2314 us
+IQR = 1.9211 us, LowerFence = 7.0929 us, UpperFence = 14.7773 us
+ConfidenceInterval = [10.5662 us; 11.8281 us] (CI 99.9%), Margin = 0.6310 us (5.64% of Mean)
+Skewness = 1.51, Kurtosis = 4.69, MValue = 2.71
+-------------------- Histogram --------------------
+[ 9.052 us ;  9.633 us) | @@@@
+[ 9.633 us ; 10.319 us) | @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[10.319 us ; 10.831 us) | @@@@@@@@@@
+[10.831 us ; 11.516 us) | @@@@@@@@@@@@@@
+[11.516 us ; 12.480 us) | @@@@@@@@
+[12.480 us ; 13.321 us) | @@@@
+[13.321 us ; 14.006 us) | @@@@@
+[14.006 us ; 14.977 us) | @@
+[14.977 us ; 15.561 us) | @
+[15.561 us ; 16.246 us) | @@@
+[16.246 us ; 16.889 us) | 
+[16.889 us ; 17.574 us) | @
+---------------------------------------------------
+
+CopyFromStreamToStream.CopyToStreamFromManager: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=2048]
+Runtime = .NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 119.9133 us, StdErr = 0.6873 us (0.57%); N = 19, StdDev = 2.9959 us
+Min = 116.7214 us, Q1 = 117.7158 us, Median = 118.9278 us, Q3 = 122.1092 us, Max = 128.1188 us
+IQR = 4.3934 us, LowerFence = 111.1257 us, UpperFence = 128.6993 us
+ConfidenceInterval = [117.2179 us; 122.6087 us] (CI 99.9%), Margin = 2.6954 us (2.25% of Mean)
+Skewness = 1.14, Kurtosis = 3.59, MValue = 2
+-------------------- Histogram --------------------
+[115.739 us ; 119.370 us) | @@@@@@@@@@@
+[119.370 us ; 124.119 us) | @@@@@@
+[124.119 us ; 129.101 us) | @@
+---------------------------------------------------
+
+CopyFromStreamToStream.CopyToStreamFromManagerInsideUsing: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=2048]
+Runtime = .NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 121.6344 us, StdErr = 0.4815 us (0.40%); N = 15, StdDev = 1.8647 us
+Min = 119.3072 us, Q1 = 120.2350 us, Median = 121.1294 us, Q3 = 122.9304 us, Max = 125.6558 us
+IQR = 2.6954 us, LowerFence = 116.1919 us, UpperFence = 126.9735 us
+ConfidenceInterval = [119.6409 us; 123.6280 us] (CI 99.9%), Margin = 1.9935 us (1.64% of Mean)
+Skewness = 0.59, Kurtosis = 2.33, MValue = 2
+-------------------- Histogram --------------------
+[118.646 us ; 122.404 us) | @@@@@@@@@@
+[122.404 us ; 126.317 us) | @@@@@
+---------------------------------------------------
+
+CopyFromStreamToStream.ArraySegment: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=4096]
+Runtime = .NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 16.9297 us, StdErr = 0.1028 us (0.61%); N = 79, StdDev = 0.9140 us
+Min = 15.4676 us, Q1 = 16.2356 us, Median = 16.7258 us, Q3 = 17.3954 us, Max = 19.2066 us
+IQR = 1.1598 us, LowerFence = 14.4959 us, UpperFence = 19.1351 us
+ConfidenceInterval = [16.5780 us; 17.2814 us] (CI 99.9%), Margin = 0.3517 us (2.08% of Mean)
+Skewness = 0.78, Kurtosis = 2.79, MValue = 2.74
+-------------------- Histogram --------------------
+[15.431 us ; 15.785 us) | @@@@
+[15.785 us ; 16.215 us) | @@@@@@@@@@@@
+[16.215 us ; 16.799 us) | @@@@@@@@@@@@@@@@@@@@@@@@@@
+[16.799 us ; 17.172 us) | @@@@@@@@@@@@@
+[17.172 us ; 17.610 us) | @@@@@@@@@
+[17.610 us ; 18.266 us) | @@@@
+[18.266 us ; 18.741 us) | @@@@@@@@
+[18.741 us ; 19.283 us) | @@@
+---------------------------------------------------
+
+CopyFromStreamToStream.CopyToStream: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=4096]
+Runtime = .NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 17.3492 us, StdErr = 0.0993 us (0.57%); N = 54, StdDev = 0.7297 us
+Min = 15.7627 us, Q1 = 16.8417 us, Median = 17.3003 us, Q3 = 17.8613 us, Max = 19.1829 us
+IQR = 1.0196 us, LowerFence = 15.3123 us, UpperFence = 19.3907 us
+ConfidenceInterval = [17.0033 us; 17.6952 us] (CI 99.9%), Margin = 0.3459 us (1.99% of Mean)
+Skewness = 0.35, Kurtosis = 2.79, MValue = 2.3
+-------------------- Histogram --------------------
+[15.594 us ; 16.062 us) | @
+[16.062 us ; 16.433 us) | @@@
+[16.433 us ; 17.078 us) | @@@@@@@@@@@@@@@@@@@@
+[17.078 us ; 17.563 us) | @@@@@@@@@@@
+[17.563 us ; 18.233 us) | @@@@@@@@@@@@@@
+[18.233 us ; 18.727 us) | @@
+[18.727 us ; 19.352 us) | @@
+---------------------------------------------------
+
+CopyFromStreamToStream.CopyToStreamFromManager: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=4096]
+Runtime = .NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 233.4703 us, StdErr = 0.4314 us (0.18%); N = 13, StdDev = 1.5554 us
+Min = 229.8638 us, Q1 = 232.6654 us, Median = 233.4254 us, Q3 = 234.5709 us, Max = 236.2794 us
+IQR = 1.9055 us, LowerFence = 229.8072 us, UpperFence = 237.4292 us
+ConfidenceInterval = [231.6076 us; 235.3330 us] (CI 99.9%), Margin = 1.8627 us (0.80% of Mean)
+Skewness = -0.44, Kurtosis = 3.2, MValue = 2
+-------------------- Histogram --------------------
+[229.285 us ; 236.858 us) | @@@@@@@@@@@@@
+---------------------------------------------------
+
+CopyFromStreamToStream.CopyToStreamFromManagerInsideUsing: Job-ZVEPDP(InvocationCount=500, UnrollFactor=1) [Capacity=4096]
+Runtime = .NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 233.2692 us, StdErr = 1.5848 us (0.68%); N = 15, StdDev = 6.1378 us
+Min = 228.6336 us, Q1 = 229.4578 us, Median = 230.6602 us, Q3 = 238.6934 us, Max = 250.3320 us
+IQR = 9.2356 us, LowerFence = 215.6044 us, UpperFence = 252.5468 us
+ConfidenceInterval = [226.7075 us; 239.8309 us] (CI 99.9%), Margin = 6.5617 us (2.81% of Mean)
+Skewness = 1.49, Kurtosis = 4.27, MValue = 2
+-------------------- Histogram --------------------
+[228.261 us ; 237.049 us) | @@@@@@@@@@@
+[237.049 us ; 246.193 us) | @@@
+[246.193 us ; 252.510 us) | @
+---------------------------------------------------
+
+Total time: 00:00:37 (37.91 sec)
+
+// * Summary *
+
+BenchmarkDotNet=v0.10.14, OS=Windows 10.0.17134
+Intel Core i5-8350U CPU 1.70GHz (Kaby Lake R), 1 CPU, 8 logical and 4 physical cores
+.NET Core SDK=2.1.403
+  [Host]     : .NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT
+  Job-ZVEPDP : .NET Core 2.1.5 (CoreCLR 4.6.26919.02, CoreFX 4.6.26919.02), 64bit RyuJIT
+
+InvocationCount=500  UnrollFactor=1  
+
+                             Method | Capacity |         Mean |       Error |      StdDev |       Median |  Gen 0 | Allocated |
+----------------------------------- |--------- |-------------:|------------:|------------:|-------------:|-------:|----------:|
+                       ArraySegment |      100 |     653.9 ns |    66.79 ns |   192.72 ns |     553.1 ns |      - |     272 B |
+                       CopyToStream |      100 |     515.5 ns |    13.42 ns |    11.21 ns |     513.3 ns |      - |     400 B |
+            CopyToStreamFromManager |      100 |   8,122.5 ns |   330.89 ns |   970.44 ns |   7,694.1 ns |      - |     544 B |
+ CopyToStreamFromManagerInsideUsing |      100 |  11,368.9 ns |   227.22 ns |   570.06 ns |  11,302.1 ns |      - |     896 B |
+                       ArraySegment |      512 |   2,440.8 ns |    54.52 ns |   105.05 ns |   2,400.6 ns |      - |     680 B |
+                       CopyToStream |      512 |   2,425.0 ns |    47.55 ns |    85.74 ns |   2,415.9 ns |      - |    1216 B |
+            CopyToStreamFromManager |      512 |  33,104.4 ns |   651.93 ns | 1,034.03 ns |  32,869.3 ns |      - |     544 B |
+ CopyToStreamFromManagerInsideUsing |      512 |  39,524.2 ns |   783.50 ns | 1,907.14 ns |  38,868.6 ns |      - |     896 B |
+                       ArraySegment |     2048 |   9,587.5 ns |   191.52 ns |   220.56 ns |   9,544.2 ns |      - |    2216 B |
+                       CopyToStream |     2048 |  11,197.1 ns |   630.96 ns | 1,748.39 ns |  10,432.8 ns |      - |    4288 B |
+            CopyToStreamFromManager |     2048 | 119,913.3 ns | 2,695.41 ns | 2,995.94 ns | 118,927.8 ns |      - |     544 B |
+ CopyToStreamFromManagerInsideUsing |     2048 | 121,634.4 ns | 1,993.53 ns | 1,864.75 ns | 121,129.4 ns |      - |     896 B |
+                       ArraySegment |     4096 |  16,929.7 ns |   351.67 ns |   914.04 ns |  16,725.8 ns |      - |    4264 B |
+                       CopyToStream |     4096 |  17,349.2 ns |   345.95 ns |   729.72 ns |  17,300.3 ns | 2.0000 |    8384 B |
+            CopyToStreamFromManager |     4096 | 233,470.3 ns | 1,862.71 ns | 1,555.45 ns | 233,425.4 ns |      - |     544 B |
+ CopyToStreamFromManagerInsideUsing |     4096 | 233,269.2 ns | 6,561.68 ns | 6,137.80 ns | 230,660.2 ns |      - |     896 B |
+
+// * Warnings *
+MinIterationTime
+  CopyFromStreamToStream.ArraySegment: InvocationCount=500, UnrollFactor=1                       -> MinIterationTime = 251.4000 us which is very small. It's recommended to increase it.
+  CopyFromStreamToStream.CopyToStream: InvocationCount=500, UnrollFactor=1                       -> MinIterationTime = 253.8000 us which is very small. It's recommended to increase it.
+  CopyFromStreamToStream.CopyToStreamFromManager: InvocationCount=500, UnrollFactor=1            -> MinIterationTime = 3.5002 ms which is very small. It's recommended to increase it.
+  CopyFromStreamToStream.CopyToStreamFromManagerInsideUsing: InvocationCount=500, UnrollFactor=1 -> MinIterationTime = 5.1864 ms which is very small. It's recommended to increase it.
+  CopyFromStreamToStream.ArraySegment: InvocationCount=500, UnrollFactor=1                       -> MinIterationTime = 1.1728 ms which is very small. It's recommended to increase it.
+  CopyFromStreamToStream.CopyToStream: InvocationCount=500, UnrollFactor=1                       -> MinIterationTime = 1.1529 ms which is very small. It's recommended to increase it.
+  CopyFromStreamToStream.CopyToStreamFromManager: InvocationCount=500, UnrollFactor=1            -> MinIterationTime = 15.7978 ms which is very small. It's recommended to increase it.
+  CopyFromStreamToStream.CopyToStreamFromManagerInsideUsing: InvocationCount=500, UnrollFactor=1 -> MinIterationTime = 18.5083 ms which is very small. It's recommended to increase it.
+  CopyFromStreamToStream.ArraySegment: InvocationCount=500, UnrollFactor=1                       -> MinIterationTime = 4.6341 ms which is very small. It's recommended to increase it.
+  CopyFromStreamToStream.CopyToStream: InvocationCount=500, UnrollFactor=1                       -> MinIterationTime = 4.6991 ms which is very small. It's recommended to increase it.
+  CopyFromStreamToStream.CopyToStreamFromManager: InvocationCount=500, UnrollFactor=1            -> MinIterationTime = 58.3623 ms which is very small. It's recommended to increase it.
+  CopyFromStreamToStream.CopyToStreamFromManagerInsideUsing: InvocationCount=500, UnrollFactor=1 -> MinIterationTime = 59.6548 ms which is very small. It's recommended to increase it.
+  CopyFromStreamToStream.ArraySegment: InvocationCount=500, UnrollFactor=1                       -> MinIterationTime = 7.7352 ms which is very small. It's recommended to increase it.
+  CopyFromStreamToStream.CopyToStream: InvocationCount=500, UnrollFactor=1                       -> MinIterationTime = 7.8825 ms which is very small. It's recommended to increase it.
+
+// * Hints *
+Outliers
+  CopyFromStreamToStream.ArraySegment: InvocationCount=500, UnrollFactor=1                       -> 4 outliers were removed
+  CopyFromStreamToStream.CopyToStream: InvocationCount=500, UnrollFactor=1                       -> 2 outliers were removed
+  CopyFromStreamToStream.CopyToStreamFromManager: InvocationCount=500, UnrollFactor=1            -> 1 outlier  was  removed
+  CopyFromStreamToStream.CopyToStreamFromManagerInsideUsing: InvocationCount=500, UnrollFactor=1 -> 6 outliers were removed
+  CopyFromStreamToStream.ArraySegment: InvocationCount=500, UnrollFactor=1                       -> 7 outliers were removed
+  CopyFromStreamToStream.CopyToStream: InvocationCount=500, UnrollFactor=1                       -> 7 outliers were removed
+  CopyFromStreamToStream.CopyToStreamFromManager: InvocationCount=500, UnrollFactor=1            -> 2 outliers were removed
+  CopyFromStreamToStream.CopyToStreamFromManagerInsideUsing: InvocationCount=500, UnrollFactor=1 -> 10 outliers were removed
+  CopyFromStreamToStream.ArraySegment: InvocationCount=500, UnrollFactor=1                       -> 4 outliers were removed
+  CopyFromStreamToStream.CopyToStream: InvocationCount=500, UnrollFactor=1                       -> 11 outliers were removed
+  CopyFromStreamToStream.ArraySegment: InvocationCount=500, UnrollFactor=1                       -> 2 outliers were removed
+  CopyFromStreamToStream.CopyToStream: InvocationCount=500, UnrollFactor=1                       -> 3 outliers were removed
+  CopyFromStreamToStream.CopyToStreamFromManager: InvocationCount=500, UnrollFactor=1            -> 2 outliers were removed
+
+// * Legends *
+  Capacity  : Value of the 'Capacity' parameter
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  Median    : Value separating the higher half of all measurements (50th percentile)
+  Gen 0     : GC Generation 0 collects per 1k Operations
+  Allocated : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 ns      : 1 Nanosecond (0.000000001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+// * Artifacts cleanup *
