@@ -21,7 +21,7 @@ namespace dotnet_performance
                 )
                 .With(BenchmarkDotNet.Columns.DefaultColumnProviders.Instance);
 
-            BenchmarkRunner.Run<CopyFromStreamToStream>(config);
+            BenchmarkRunner.Run<ForgetToCloseStream>(config);
         }
     }
 }
